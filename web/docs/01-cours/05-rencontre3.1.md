@@ -1,6 +1,6 @@
 ---
 title: Rencontre 3.1
-description: Cours Rencontre 3.1
+description: La rétropropagation
 ---
 
 # Rencontre 3.1

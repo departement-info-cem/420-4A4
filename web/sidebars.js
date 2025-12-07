@@ -9,13 +9,9 @@ const sidebars = {
       id: "cours/rencontre1.1", // Doit matcher le nom du document qui est dans docs/01-cours/. Les chiffres au début (ex : 01-) sont ignorés.
       customProps: { // Attention, il faut recompiler à chaque modification dans sidebar.js pour que les modifications s'appliquent.
         calendrier: {
-          "Prof 1": [
-            {"1010": "2025-06-09"}  // Date du cours pour le groupe 1010 du le Prof 1
+          "Xavier Glorot": [
+            {"1010": "2026-01-26"}  // Date du cours pour le groupe 1010 du le Prof 1
           ],
-          "Prof 2": [
-            {"1020": "2025-06-09"},  // Date du cours pour le groupe 1020 du le Prof 2
-            {"1030": "2025-06-09"} // Date du cours pour le groupe 1030 du le Prof 2
-          ]
         },
         tooltip: "visible" // Valeurs possibles visible ou cache, valeur par défaut "visible"
       }
@@ -26,15 +22,10 @@ const sidebars = {
       id: "cours/rencontre1.2",
       customProps: {
         calendrier: {
-          "Prof 1": [
-            {"1010": "2025-06-09"} // Date du cours pour le groupe 1010 du le Prof 1
+          "Xavier Glorot": [
+            {"1010": "2026-01-30"} // Date du cours pour le groupe 1010 du le Prof 1
           ],
-          "Prof 2": [
-            {"1020": "2025-06-09"}, // Date du cours pour le groupe 1020 du le Prof 2
-            {"1030": "2025-06-09"} // Date du cours pour le groupe 1030 du le Prof 2
-          ]
         },
-        tooltip: "cache"
       }
     },
     {
@@ -43,16 +34,10 @@ const sidebars = {
       id: "cours/rencontre2.1",
       customProps: {
         calendrier: {
-          "Prof 1": [
-            {"1010": "2025-06-11"}
+          "Xavier Glorot": [
+            {"1010": "2026-02-02"}
           ],
-          "Prof 2": [
-            {"1020": "2025-06-09"},
-            {"1030": "2025-06-09"}
-          ]
         },
-        avancementLabel: "TP1 - Créé",
-        avancement: 0.0
       }
     },
     {
@@ -61,16 +46,10 @@ const sidebars = {
       id: "cours/rencontre2.2",
       customProps: {
         calendrier: {
-          "Prof 1": [
-            {"1010": "2025-06-11"}
+          "Xavier Glorot": [
+            {"1010": "2026-02-06"}
           ],
-          "Prof 2": [
-            {"1020": "2025-06-11"},
-            {"1030": "2025-06-11"}
-          ]
         },
-        avancementLabel: "TP1",
-        avancement: 0.1
       }
     },
     {
@@ -79,16 +58,10 @@ const sidebars = {
       id: "cours/rencontre3.1",
       customProps: {
         calendrier: {
-          "Prof 1": [
-            {"1010": "2025-06-12"}
+          "Xavier Glorot": [
+            {"1010": "2026-02-09"}
           ],
-          "Prof 2": [
-            {"1020": "2025-06-11"},
-            {"1030": "2025-06-11"}
-          ]
         },
-        avancementLabel: "TP1",
-        avancement: 0.25
       }
     },
     {
@@ -97,16 +70,10 @@ const sidebars = {
       id: "cours/rencontre3.2",
       customProps: {
         calendrier: {
-          "Prof 1": [
-            {"1010": "2025-06-12"}
+          "Xavier Glorot": [
+            {"1010": "2026-02-13"}
           ],
-          "Prof 2": [
-            {"1020": "2025-06-12"},
-            {"1030": "2025-06-12"}
-          ]
         },
-        avancementLabel: "TP1",
-        avancement: 0.5
       }
     },
     {
@@ -115,16 +82,10 @@ const sidebars = {
       id: "cours/rencontre4.1",
       customProps: {
         calendrier: {
-          "Prof 1": [
-            {"1010": "2025-06-16"}
+          "Xavier Glorot": [
+            {"1010": "2026-02-16"}
           ],
-          "Prof 2": [
-            {"1020": "2025-06-12"},
-            {"1030": "2025-06-12"}
-          ]
         },
-        avancementLabel: "TP1",
-        avancement: 0.75
       }
     },
     {
@@ -133,17 +94,11 @@ const sidebars = {
       id: "cours/rencontre4.2",
       customProps: {
         calendrier: {
-          "Prof 1": [
-            {"1010": "2025-06-16"}
+          "Xavier Glorot": [
+            {"1010": "2026-02-20"}
           ],
-          "Prof 2": [
-            {"1020": "2025-06-16"},
-            {"1030": "2025-06-16"}
-          ]
         },
-        avancementLabel: "TP1",
-        avancement: 1
-      }
+      },
     },
     {
       type: "doc",
@@ -151,18 +106,13 @@ const sidebars = {
       id: "cours/rencontre5.1",
       customProps: {
         calendrier: {
-          "Prof 1": [
-            {"1010": "2025-06-18"}
+          "Xavier Glorot": [
+            {"1010": "2026-02-23"}
           ],
-          "Prof 2": [
-            {"1020": "2025-06-18"},
-            {"1030": "2025-06-18"}
-          ]
         },
-        avancementLabel: "TP2 - Créé",
-        avancement: 0.0
+        avancementLabel: "TP1",
+        avancement: 0.33
       },
-      "className": "remise-tp1"
     },
     {
       type: "doc",
@@ -170,16 +120,12 @@ const sidebars = {
       id: "cours/rencontre5.2",
       customProps: {
         calendrier: {
-          "Prof 1": [
-            {"1010": "2025-06-18"}
+          "Xavier Glorot": [
+            {"1010": "2026-02-27"}
           ],
-          "Prof 2": [
-            {"1020": "2025-06-18"},
-            {"1030": "2025-06-18"}
-          ]
         },
-        avancementLabel: "TP2",
-        avancement: 0.1
+        avancementLabel: "TP1",
+        avancement: 0.66
       }
     },
     {
@@ -188,16 +134,12 @@ const sidebars = {
       id: "cours/rencontre6.1",
       customProps: {
         calendrier: {
-          "Prof 1": [
-            {"1010": "2025-06-19"}
+          "Xavier Glorot": [
+            {"1010": "2026-03-02"}
           ],
-          "Prof 2": [
-            {"1020": "2025-06-19"},
-            {"1030": "2025-06-19"}
-          ]
         },
-        avancementLabel: "TP2",
-        avancement: 0.3
+        avancementLabel: "TP1",
+        avancement: 1.0
       }
     },
     {
@@ -206,17 +148,12 @@ const sidebars = {
       id: "cours/rencontre6.2",
       customProps: {
         calendrier: {
-          "Prof 1": [
-            {"1010": "2025-06-19"}
+          "Xavier Glorot": [
+            {"1010": "2026-03-06"}
           ],
-          "Prof 2": [
-            {"1020": "2025-06-19"},
-            {"1030": "2025-06-19"}
-          ]
         },
-        avancementLabel: "TP2",
-        avancement: 0.4
-      }
+      },
+      "className": "remise-tp1"
     },
     {
       type: "doc",
@@ -224,16 +161,10 @@ const sidebars = {
       id: "cours/rencontre7.1",
       customProps: {
         calendrier: {
-          "Prof 1": [
-            {"1010": "2025-06-23"}
+          "Xavier Glorot": [
+            {"1010": "2026-03-09"}
           ],
-          "Prof 2": [
-            {"1020": "2025-06-16"},
-            {"1030": "2025-06-16"}
-          ]
         },
-        avancementLabel: "TP2",
-        avancement: 0.4
       }
     },
     {
@@ -242,13 +173,9 @@ const sidebars = {
       id: "cours/rencontre7.2",
       customProps: {
         calendrier: {
-          "Prof 1": [
-            {"1010": "2025-06-23"}
+          "Xavier Glorot": [
+            {"1010": "2026-03-13"}
           ],
-          "Prof 2": [
-            {"1020": "2025-06-19"},
-            {"1030": "2025-06-19"}
-          ]
         }
       },
       "className": "examen"
@@ -259,16 +186,10 @@ const sidebars = {
       id: "cours/rencontre8.1",
       customProps: {
         calendrier: {
-          "Prof 1": [
-            {"1010": "2025-06-25"}
+          "Xavier Glorot": [
+            {"1010": "2026-03-23"}
           ],
-          "Prof 2": [
-            {"1020": "2025-06-23"},
-            {"1030": "2025-06-23"}
-          ]
         },
-        avancementLabel: "TP2",
-        avancement: 0.6
       }
     },
     {
@@ -277,16 +198,10 @@ const sidebars = {
       id: "cours/rencontre8.2",
       customProps: {
         calendrier: {
-          "Prof 1": [
-            {"1010": "2025-06-25"}
+          "Xavier Glorot": [
+            {"1010": "2026-03-27"}
           ],
-          "Prof 2": [
-            {"1020": "2025-06-23"},
-            {"1030": "2025-06-23"}
-          ]
         },
-        avancementLabel: "TP2",
-        avancement: 0.7
       }
     },
     {
@@ -295,16 +210,12 @@ const sidebars = {
       id: "cours/rencontre9.1",
       customProps: {
         calendrier: {
-          "Prof 1": [
-            {"1010": "2025-06-26"}
+          "Xavier Glorot": [
+            {"1010": "2026-03-30"}
           ],
-          "Prof 2": [
-            {"1020": "2025-06-25"},
-            {"1030": "2025-06-25"}
-          ]
         },
         avancementLabel: "TP2",
-        avancement: 0.9
+        avancement: 0.33
       }
     },
     {
@@ -313,18 +224,13 @@ const sidebars = {
       id: "cours/rencontre9.2",
       customProps: {
         calendrier: {
-          "Prof 1": [
-            {"1010": "2025-06-26"}
+          "Xavier Glorot": [
+            {"1010": "2026-03-31"}
           ],
-          "Prof 2": [
-            {"1020": "2025-06-25"},
-            {"1030": "2025-06-25"}
-          ]
         },
         avancementLabel: "TP2",
-        avancement: 1
+        avancement: 0.66
       },
-      "className": "remise-tp2"
     },
     {
       type: "doc",
@@ -332,16 +238,12 @@ const sidebars = {
       id: "cours/rencontre10.1",
       customProps: {
         calendrier: {
-          "Prof 1": [
-            {"1010": "2025-07-01"}
+          "Xavier Glorot": [
+            {"1010": "2026-04-10"}
           ],
-          "Prof 2": [
-            {"1020": "2025-06-26"},
-            {"1030": "2025-06-26"}
-          ]
         },
-        avancementLabel: "TP3 - Créé",
-        avancement: 0.0
+        avancementLabel: "TP2",
+        avancement: 1.0
       }
     },
     {
@@ -350,16 +252,11 @@ const sidebars = {
       id: "cours/rencontre10.2",
       customProps: {
         calendrier: {
-          "Prof 1": [
-            {"1010": "2025-07-01"}
+          "Xavier Glorot": [
+            {"1010": "2026-04-13"}
           ],
-          "Prof 2": [
-            {"1020": "2025-06-26"},
-            {"1030": "2025-06-26"}
-          ]
         },
-        avancementLabel: "TP3",
-        avancement: 0.1
+        "className": "remise-tp2",
       }
     },
     {
@@ -368,16 +265,10 @@ const sidebars = {
       id: "cours/rencontre11.1",
       customProps: {
         calendrier: {
-          "Prof 1": [
-            {"1010": "2025-07-02"}
+          "Xavier Glorot": [
+            {"1010": "2026-04-20"}
           ],
-          "Prof 2": [
-            {"1020": "2025-06-26"},
-            {"1030": "2025-06-26"}
-          ]
         },
-        avancementLabel: "TP3",
-        avancement: 0.2
       }
     },
     {
@@ -386,16 +277,10 @@ const sidebars = {
       id: "cours/rencontre11.2",
       customProps: {
         calendrier: {
-          "Prof 1": [
-            {"1010": "2025-07-02"}
+          "Xavier Glorot": [
+            {"1010": "2026-04-24"}
           ],
-          "Prof 2": [
-            {"1020": "2025-07-01"},
-            {"1030": "2025-07-01"}
-          ]
         },
-        avancementLabel: "TP3",
-        avancement: 0.3
       }
     },
     {
@@ -404,16 +289,10 @@ const sidebars = {
       id: "cours/rencontre12.1",
       customProps: {
         calendrier: {
-          "Prof 1": [
-            {"1010": "2025-07-03"}
+          "Xavier Glorot": [
+            {"1010": "2026-04-27"}
           ],
-          "Prof 2": [
-            {"1020": "2025-07-01"},
-            {"1030": "2025-07-01"}
-          ]
         },
-        avancementLabel: "TP3",
-        avancement: 0.4
       }
     },
     {
@@ -422,16 +301,10 @@ const sidebars = {
       id: "cours/rencontre12.2",
       customProps: {
         calendrier: {
-          "Prof 1": [
-            {"1010": "2025-07-03"}
+          "Xavier Glorot": [
+            {"1010": "2026-05-01"}
           ],
-          "Prof 2": [
-            {"1020": "2025-07-01"},
-            {"1030": "2025-07-01"}
-          ]
         },
-        avancementLabel: "TP3",
-        avancement: 0.5
       }
     },
     {
@@ -440,16 +313,12 @@ const sidebars = {
       id: "cours/rencontre13.1",
       customProps: {
         calendrier: {
-          "Prof 1": [
-            {"1010": "2025-07-07"}
+          "Xavier Glorot": [
+            {"1010": "2026-05-04"}
           ],
-          "Prof 2": [
-            {"1020": "2025-07-02"},
-            {"1030": "2025-07-02"}
-          ]
         },
         avancementLabel: "TP3",
-        avancement: 0.6
+        avancement: 0.25
       }
     },
     {
@@ -458,16 +327,12 @@ const sidebars = {
       id: "cours/rencontre13.2",
       customProps: {
         calendrier: {
-          "Prof 1": [
-            {"1010": "2025-07-07"}
+          "Xavier Glorot": [
+            {"1010": "2026-05-08"}
           ],
-          "Prof 2": [
-            {"1020": "2025-07-07"},
-            {"1030": "2025-07-07"}
-          ]
         },
         avancementLabel: "TP3",
-        avancement: 0.7
+        avancement: 0.50
       }
     },
     {
@@ -476,16 +341,12 @@ const sidebars = {
       id: "cours/rencontre14.1",
       customProps: {
         calendrier: {
-          "Prof 1": [
-            {"1010": "2025-07-10"}
+          "Xavier Glorot": [
+            {"1010": "2026-05-11"}
           ],
-          "Prof 2": [
-            {"1020": "2025-07-04"},
-            {"1030": "2025-07-04"}
-          ]
         },
         avancementLabel: "TP3",
-        avancement: 0.8
+        avancement: 0.75
       }
     },
     {
@@ -494,13 +355,9 @@ const sidebars = {
       id: "cours/rencontre14.2",
       customProps: {
         calendrier: {
-          "Prof 1": [
-            {"1010": "2025-07-09"}
+          "Xavier Glorot": [
+            {"1010": "2026-05-15"}
           ],
-          "Prof 2": [
-            {"1020": "2025-07-07"},
-            {"1030": "2025-07-07"}
-          ]
         },
         avancementLabel: "TP3",
         avancement: 1
@@ -512,13 +369,9 @@ const sidebars = {
       id: "cours/rencontre15.1",
       customProps: {
         calendrier: {
-          "Prof 1": [
-            {"1010": "2025-07-09"}
+          "Xavier Glorot": [
+            {"1010": "2026-05-25"}
           ],
-          "Prof 2": [
-            {"1020": "2025-07-02"},
-            {"1030": "2025-07-02"}
-          ]
         }
       },
       "className": "remise-tp3"
@@ -529,13 +382,9 @@ const sidebars = {
       id: "cours/rencontre15.2",
       customProps: {
         calendrier: {
-          "Prof 1": [
-            {"1010": "2025-07-10"}
+          "Xavier Glorot": [
+            {"1010": "2026-05-29"}
           ],
-          "Prof 2": [
-            {"1020": "2025-07-04"},
-            {"1030": "2025-07-04"}
-          ]
         }
       },
       "className": "examen"
@@ -545,6 +394,30 @@ const sidebars = {
     {
       type: "autogenerated",
       "dirName": "02-tp"
+    }
+  ],
+    "python": [
+    {
+      type: "autogenerated",
+      "dirName": "03-python"
+    }
+  ],
+    "colab": [
+    {
+      type: "autogenerated",
+      "dirName": "04-colab"
+    }
+  ],
+    "keras": [
+    {
+      type: "autogenerated",
+      "dirName": "05-keras"
+    }
+  ],
+    "googlecloud": [
+    {
+      type: "autogenerated",
+      "dirName": "06-googlecloud"
     }
   ]
 };

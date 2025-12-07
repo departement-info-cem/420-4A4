@@ -67,6 +67,9 @@ const config = {
           src: "img/logo.svg",
         },
         items: [
+          // cette partie est commentée car je ne veux pas rajouter de contenu de cours et de TP
+          // pour l'instant sur le site Web.
+          /*
           {
             type: "doc",
             docId: "cours/rencontre1.1",
@@ -78,6 +81,31 @@ const config = {
             position: "left",
             sidebarId: "tp",
             label: "Travaux Pratiques",
+          },
+          */
+         {
+            type: "docSidebar",
+            position: "left",
+            sidebarId: "python",
+            label: "Python",
+          },
+          {
+            type: "docSidebar",
+            position: "left",
+            sidebarId: "colab",
+            label: "Colab",
+          },
+          {
+            type: "docSidebar",
+            position: "left",
+            sidebarId: "keras",
+            label: "Keras/PyTorch",
+          },
+          {
+            type: "docSidebar",
+            position: "left",
+            sidebarId: "googlecloud",
+            label: "Google Cloud",
           },
         ],
       },
