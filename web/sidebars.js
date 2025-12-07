@@ -5,7 +5,7 @@ const sidebars = {
   docs: [
     {
       type: "doc",
-      label: "1.1 - Rencontre",
+      label: "1.1 - I.A. 101",
       id: "cours/rencontre1.1", // Doit matcher le nom du document qui est dans docs/01-cours/. Les chiffres au début (ex : 01-) sont ignorés.
       customProps: { // Attention, il faut recompiler à chaque modification dans sidebar.js pour que les modifications s'appliquent.
         calendrier: {
@@ -18,7 +18,7 @@ const sidebars = {
     },
     {
       type: "doc",
-      label: "1.2 - Rencontre",
+      label: "1.2 - Le neurone artificiel",
       id: "cours/rencontre1.2",
       customProps: {
         calendrier: {
@@ -30,7 +30,7 @@ const sidebars = {
     },
     {
       type: "doc",
-      label: "2.1 - Rencontre",
+      label: "2.1 - Le neurone artificiel",
       id: "cours/rencontre2.1",
       customProps: {
         calendrier: {
@@ -42,7 +42,7 @@ const sidebars = {
     },
     {
       type: "doc",
-      label: "2.2 - Rencontre",
+      label: "2.2 - La rétropropagation",
       id: "cours/rencontre2.2",
       customProps: {
         calendrier: {
@@ -54,7 +54,7 @@ const sidebars = {
     },
     {
       type: "doc",
-      label: "3.1 - Rencontre",
+      label: "3.1 - La rétropropagation",
       id: "cours/rencontre3.1",
       customProps: {
         calendrier: {
@@ -66,7 +66,7 @@ const sidebars = {
     },
     {
       type: "doc",
-      label: "3.2 - Rencontre",
+      label: "3.2 - Application - MNIST/Keras",
       id: "cours/rencontre3.2",
       customProps: {
         calendrier: {
@@ -78,7 +78,7 @@ const sidebars = {
     },
     {
       type: "doc",
-      label: "4.1 - Rencontre",
+      label: "4.1 - Application - MNIST/Keras",
       id: "cours/rencontre4.1",
       customProps: {
         calendrier: {
@@ -90,7 +90,7 @@ const sidebars = {
     },
     {
       type: "doc",
-      label: "4.2 - Rencontre",
+      label: "4.2 - Optimisation - Généralisation",
       id: "cours/rencontre4.2",
       customProps: {
         calendrier: {
@@ -102,7 +102,7 @@ const sidebars = {
     },
     {
       type: "doc",
-      label: "5.1 - Rencontre",
+      label: "5.1 - Optimisation - Généralisation",
       id: "cours/rencontre5.1",
       customProps: {
         calendrier: {
@@ -116,7 +116,7 @@ const sidebars = {
     },
     {
       type: "doc",
-      label: "5.2 - Rencontre",
+      label: "5.2 - TP 1",
       id: "cours/rencontre5.2",
       customProps: {
         calendrier: {
@@ -130,7 +130,7 @@ const sidebars = {
     },
     {
       type: "doc",
-      label: "6.1 - Rencontre",
+      label: "6.1 - TP 1",
       id: "cours/rencontre6.1",
       customProps: {
         calendrier: {
@@ -144,7 +144,7 @@ const sidebars = {
     },
     {
       type: "doc",
-      label: "6.2 - Rencontre",
+      label: "6.2 - Les données",
       id: "cours/rencontre6.2",
       customProps: {
         calendrier: {
@@ -157,7 +157,7 @@ const sidebars = {
     },
     {
       type: "doc",
-      label: "7.1 - Rencontre",
+      label: "7.1 - Examen 1 formatif",
       id: "cours/rencontre7.1",
       customProps: {
         calendrier: {
@@ -169,7 +169,7 @@ const sidebars = {
     },
     {
       type: "doc",
-      label: "7.2 - Rencontre",
+      label: "7.2 - Examen 1 sommatif",
       id: "cours/rencontre7.2",
       customProps: {
         calendrier: {
@@ -182,7 +182,7 @@ const sidebars = {
     },
     {
       type: "doc",
-      label: "8.1 - Rencontre",
+      label: "8.1 - Réseaux convolutionnels",
       id: "cours/rencontre8.1",
       customProps: {
         calendrier: {
@@ -194,7 +194,7 @@ const sidebars = {
     },
     {
       type: "doc",
-      label: "8.2 - Rencontre",
+      label: "8.2 - Réseaux convolutionnels",
       id: "cours/rencontre8.2",
       customProps: {
         calendrier: {
@@ -206,7 +206,7 @@ const sidebars = {
     },
     {
       type: "doc",
-      label: "9.1 - Rencontre",
+      label: "9.1 - TP 2",
       id: "cours/rencontre9.1",
       customProps: {
         calendrier: {
@@ -220,7 +220,7 @@ const sidebars = {
     },
     {
       type: "doc",
-      label: "9.2 - Rencontre",
+      label: "9.2 - TP 2",
       id: "cours/rencontre9.2",
       customProps: {
         calendrier: {
@@ -234,7 +234,7 @@ const sidebars = {
     },
     {
       type: "doc",
-      label: "10.1 - Rencontre",
+      label: "10.1 - TP 2",
       id: "cours/rencontre10.1",
       customProps: {
         calendrier: {
@@ -248,7 +248,7 @@ const sidebars = {
     },
     {
       type: "doc",
-      label: "10.2 - Rencontre",
+      label: "10.2 - Série temporelle, language",
       id: "cours/rencontre10.2",
       customProps: {
         calendrier: {
@@ -261,7 +261,7 @@ const sidebars = {
     },
     {
       type: "doc",
-      label: "11.1 - Rencontre",
+      label: "11.1 - Transformers",
       id: "cours/rencontre11.1",
       customProps: {
         calendrier: {
@@ -273,7 +273,7 @@ const sidebars = {
     },
     {
       type: "doc",
-      label: "11.2 - Rencontre",
+      label: "11.2 - Enjeux sociétaux",
       id: "cours/rencontre11.2",
       customProps: {
         calendrier: {
@@ -285,7 +285,7 @@ const sidebars = {
     },
     {
       type: "doc",
-      label: "12.1 - Rencontre",
+      label: "12.1 - nanoGPT et tinymoliere",
       id: "cours/rencontre12.1",
       customProps: {
         calendrier: {
@@ -297,7 +297,7 @@ const sidebars = {
     },
     {
       type: "doc",
-      label: "12.2 - Rencontre",
+      label: "12.2 - nanoGPT et tinymoliere",
       id: "cours/rencontre12.2",
       customProps: {
         calendrier: {
@@ -309,7 +309,7 @@ const sidebars = {
     },
     {
       type: "doc",
-      label: "13.1 - Rencontre",
+      label: "13.1 - TP 3",
       id: "cours/rencontre13.1",
       customProps: {
         calendrier: {
@@ -323,7 +323,7 @@ const sidebars = {
     },
     {
       type: "doc",
-      label: "13.2 - Rencontre",
+      label: "13.2 - TP 3",
       id: "cours/rencontre13.2",
       customProps: {
         calendrier: {
@@ -337,7 +337,7 @@ const sidebars = {
     },
     {
       type: "doc",
-      label: "14.1 - Rencontre",
+      label: "14.1 - TP 3",
       id: "cours/rencontre14.1",
       customProps: {
         calendrier: {
@@ -351,7 +351,7 @@ const sidebars = {
     },
     {
       type: "doc",
-      label: "14.2 - Rencontre",
+      label: "14.2 - TP 3",
       id: "cours/rencontre14.2",
       customProps: {
         calendrier: {
@@ -365,7 +365,7 @@ const sidebars = {
     },
     {
       type: "doc",
-      label: "15.1 - Rencontre",
+      label: "15.1 - Examen 2 formatif",
       id: "cours/rencontre15.1",
       customProps: {
         calendrier: {
@@ -378,7 +378,7 @@ const sidebars = {
     },
     {
       type: "doc",
-      label: "15.2 - Rencontre",
+      label: "15.2 - Examen 2 sommatif",
       id: "cours/rencontre15.2",
       customProps: {
         calendrier: {
