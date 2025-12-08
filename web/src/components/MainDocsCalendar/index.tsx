@@ -270,10 +270,11 @@ export default function MainDocsCalendar({
                   <div
                     key={eventIndex}
                     className={`${styles.event} ${event.groupe ? styles[getEventClassName(event.groupe)] : ''}`}
-                    onClick={() => handleEventClick(event)}
+                    //onClick={() => handleEventClick(event)} // Désactive le clic sur l'élément
                     title={`${event.title} - ${professorName}`}
                   >
                     <div className={styles.eventTitle}>{event.title}</div>
+                    <div className={styles.eventDescription}>{event.description}</div>
                   </div>
                 ))}
               </div>

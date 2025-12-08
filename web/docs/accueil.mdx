@@ -4,17 +4,17 @@ slug: /
 hide_table_of_contents: true
 ---
 
-# Accueil
+import useBaseUrl from '@docusaurus/useBaseUrl';
 
-Bienvenue sur le site de documentation du cours _420-4A4-EM: Réseaux de Neurones et Sciences_.
 
-* Le **contenu théorique 📖** est partagé via le groupe Teams ![Teams](../static/img/icons/teams.svg) du cours (présentations .pdf ![pdf](../static/img/icons/pdf.svg))
-* Le **contenu pratique 💻** est partagé via le groupe Teams ![Teams](../static/img/icons/teams.svg) du cours (colab notebooks .pynb ![pdf](../static/img/icons/colab.svg))
-* Ce site contient la **documentation technique 🔧** sur les outils utilisés et le calendrier du cours
+# 420-4A4 - Réseaux de Neurones et Sciences
 
-Mon emploi du temps pour vérifier mes heures de disponibilités: *à lier*
+:::info Bienvenue sur le site du cours _420-4A4-EM: Réseaux de Neurones et Sciences_
 
-Le plan de cours: *à lier*
+* Le **contenu théorique 📖** est partagé via le groupe Teams ![Teams](../static/img/icons/teams.svg) (présentations .pdf ![pdf](../static/img/icons/pdf.svg))
+* Le **contenu pratique 💻** est partagé via le groupe Teams ![Teams](../static/img/icons/teams.svg) (notebooks .pynb ![pdf](../static/img/icons/colab.svg))
+* Ce site contient la **documentation🔧** pour les outils utilisés et le calendrier
+:::
 
 <DocsViewer
     tabs={[
@@ -22,19 +22,31 @@ Le plan de cours: *à lier*
         id: "grid",
         label: "Cours",
         icon: "📋",
-        // Le div ici permet de rendre les éléments non cliquables
-        component: (
-            <div style={{ pointerEvents: "none", cursor: "default" }}>
-            <MainDocsGrid />
-            </div>
-        ),
+        component: <MainDocsGrid />,
         // Les titres et les sous-titres sont définis dans les attributs "title" et "description" de chaque document des cours.
     }, 
     {
         id: "calendar-prof1",
-        label: "Xavier Glorot", // Modifier pour le nom de l'enseignant
+        label: "Calendrier", // Modifier pour le nom de l'enseignant
         icon: "📅",
         component: <MainDocsCalendar professorName="Xavier Glorot" />, // Doit matcher le nom du professeur qui est dans l'attribut "calendrier" des cours qui sont dans sidebar.js
+    },
+    {
+        id: "horaire-prof1",
+        label: "Horaire",
+        icon: "⏰",
+        component:
+        <div>
+            <iframe
+                src={useBaseUrl('/pdf/XavierGlorotA25.pdf')}
+                style={{
+                    width: '100%',
+                    aspectRatio: '1',   // hauteur d’une page PDF letter US
+                    border: 'none',
+                }}
+                title="Disponibilités des labos"
+            />
+        </div>
     },
     //* Ajouter d'autres enseignants ici. Voir sidebar.js pour configurer les calendriers.
     ]}

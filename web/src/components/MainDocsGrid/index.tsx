@@ -94,7 +94,7 @@ export default function MainDocsGrid() {
               color: doc._sidebarProps?.color || "inherit",
               position: "relative",
             }}
-            onClick={() => handleClick(doc)}
+            //onClick={() => handleClick(doc)} désactive le click sur l'élément
             onMouseEnter={(e) => {
               if(tooltip !== "cache") {
                 setHoveredIndex(i);
@@ -135,8 +135,8 @@ export default function MainDocsGrid() {
                 className={
                   styles.tooltip +
                   (colorMode === "dark"
-                    ? " " + styles.tooltipDark
-                    : " " + styles.tooltipLight) +
+                    ? " " + styles.tooltipLight
+                    : " " + styles.tooltipDark) + // styles inversés pour le tooltip
                   (tooltipSide === "left"
                     ? " " + styles.tooltipLeft
                     : " " + styles.tooltipRight)

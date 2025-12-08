@@ -85,7 +85,7 @@ const config = {
             label: "Travaux Pratiques",
           },
           */
-         {
+          {
             type: "docSidebar",
             position: "left",
             sidebarId: "python",
@@ -101,13 +101,23 @@ const config = {
             type: "docSidebar",
             position: "left",
             sidebarId: "keras",
-            label: "Keras/PyTorch",
+            label: "Keras",
           },
           {
             type: "docSidebar",
             position: "left",
             sidebarId: "googlecloud",
-            label: "Google Cloud",
+            label: "Cloud",
+          },
+          {
+            label: "SN1 (Programmation)",
+            href: `https://info.cegepmontpetit.ca/420-SN1/`,
+            position: "right",
+          },
+          {
+            label: "4A3 (Projet d'intégration)",
+            href: `https://info.cegepmontpetit.ca/360-4A3/`,
+            position: "right",
           },
         ],
       },
@@ -124,9 +134,8 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()}. ${
-          siteConfig.nom
-        }. CÉGEP Édouard-Montpetit.`,
+        copyright: `Copyright © ${new Date().getFullYear()}. ${siteConfig.nom
+          }. CÉGEP Édouard-Montpetit.`,
       },
       // Décommenter et remplir pour activer l'indexation des pages par le moteur de recherche local
       // algolia: {
@@ -139,13 +148,40 @@ const config = {
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
-        additionalLanguages: ["csharp", "java", "dart"],
+        additionalLanguages: ["python"],
       },
       metadata: [
         {
           name: "keywords",
-          content: `${siteConfig.nom}, ${siteConfig.description}, informatique, technique, cégep, cegep, édouard-montpetit, edouard-montpetit, édouard montpetit, edouard montpetit`,
+          content: `${siteConfig.nom}, ${siteConfig.description}, 
+          4A4, 420-4A4, cem, sciences de la nature, réseaux de neurones, informatique, IA, 
+          intelligence artificielle, deep learning, programmation, python, cegep, édouard-montpetit,
+          edouard-montpetit, édouard montpetit, edouard montpetit`,
         },
+        {
+            name: "description",
+            content: siteConfig.description,
+        },
+        {
+            property: "og:title",
+            content: siteConfig.nom,
+        },
+        {
+            property: "og:description",
+            content: siteConfig.description,
+        },
+        {
+            property: "og:type",
+            content: "website",
+        },
+        {
+            property: "og:image",
+            content: "https://info.cegepmontpetit.ca/420-4A4/img/logo.svg"
+        },
+        {
+            property: "og:url",
+            content: "https://info.cegepmontpetit.ca/420-4A4/"
+        }
       ],
     }),
 };

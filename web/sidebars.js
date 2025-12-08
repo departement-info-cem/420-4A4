@@ -256,8 +256,8 @@ const sidebars = {
             {"1010": "2026-04-13"}
           ],
         },
-        "className": "remise-tp2",
-      }
+      },
+      "className": "remise-tp2",
     },
     {
       type: "doc",

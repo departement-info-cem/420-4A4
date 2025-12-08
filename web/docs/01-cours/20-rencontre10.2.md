@@ -1,6 +1,6 @@
 ---
 title: Rencontre 10.2
-description: Série temporelle, language
+description: Données séquentielles
 ---
 
 # Série temporelle, language
