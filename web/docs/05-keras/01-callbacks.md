@@ -39,7 +39,7 @@ Utilité :
 ## 3. `ModelCheckpoint` : garder le « meilleur » modèle 🏆
 
 ```python
-fichier_sauvegarde = checkpoint_dir + '/meilleur.model.keras'
+fichier_sauvegarde = dossier_experience + '/meilleur.model.keras'
 callback_meilleur = keras.callbacks.ModelCheckpoint(
     filepath=fichier_sauvegarde,
     monitor='val_acc',
@@ -90,7 +90,7 @@ Exemple d'analyse rapide avec pandas :
 import pandas as pd
 import matplotlib.pyplot as plt
 
-df = pd.read_csv(logger_filepath)
+df = pd.read_csv(fichier_log)
 plt.plot(df["loss"], label="loss")
 plt.plot(df["val_acc"], label="val_acc")
 plt.legend()
