@@ -53,7 +53,7 @@ if torch.cuda.is_available():
 - Le temps de session GPU est **limité** (quotas Google).
 - En cas d’inactivité, la session peut être **coupée**.
 
-Nous allons donc devoir utiliser des stratégies pour sauvegarder nos modèles pendant l'entraînement.
+Nous allons donc devoir utiliser des stratégies pour sauvegarder nos modèles pendant l'entraînement ([Callbacks Keras](/keras/callbacks)).
 :::
 
 ---
@@ -95,7 +95,7 @@ Inconvénients :
 Une fois connecté, l’exécution des cellules se fera **sur ta machine**, mais l’interface restera celle de Google Colab.
 
 :::danger
-Pour pouvoir rouler le code des laboratoires, il faudra installer toutes les librairies nécessaires (**PyTorch**, **Keras**, **Numpy**...). Il faudra aussi configurer ton GPU, si tu en as un, pour qu'il soit utilisable.
+Pour pouvoir rouler le code des laboratoires, il faudra installer toutes les librairies nécessaires (**Numpy**, **Keras**, **PyTorch** ...). Il faudra aussi configurer ton GPU, si tu en as un, pour qu'il soit utilisable.
 
 Les machines des laboratoires ont les librairies nécessaires mais pas de GPU. tu ne pourras également pas lier le Google Drive de la façon que nous avons vu. 
 
