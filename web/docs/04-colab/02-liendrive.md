@@ -9,11 +9,18 @@ Lier ton Google Drive ![Drive](../../static/img/icons/drive.svg) à un notebook
 Cela te permettra d'utiliser ton Google Drive comme un disque dur partagé pour tous tes notebooks Colab.
 :::
 
+
+:::warning
+Dans une [session](/colab/typesessions) locale ou sur [Google Cloud](/googlecloud/googlecloud1) (Colab Enterprise), il n'est pas possible de monter le drive.
+
+**Dans ce cas, il faudra sauvegarder les fichiers manuellement à la fin des exécutions.**
+:::
+
 ---
 
 ## 1. Monter Google Drive dans Colab
 
-1. Ouvre ton notebook dans **Google Colab**.
+1. Ouvre ton notebook dans **[Google Colab](https://colab.research.google.com/)**.
 2. Ajoute une nouvelle cellule **Code** et colle ce code :
 
    ```python
@@ -42,26 +49,14 @@ Ton Google Drive est maintenant monté dans le dossier :
 
 ---
 
-## 2. Accéder aux fichiers de Google Drive
+## 2. Naviguer, lire et écrire
 
-### Lister des fichiers
-
-Exemple, lister le contenu de `MyDrive` :
-
-```python
-import os
-
-chemin = "/content/drive/MyDrive"
-print(os.listdir(chemin))
-```
 ### Explorateur de fichiers
-Tu peux aussi naviguer dans **l’explorateur de fichiers** à gauche de Colab :
+
+Tu peux naviguer dans **l’explorateur de fichiers** à gauche de Colab :
 - clique sur l’icône **dossier** ![dossier](../../static/img/icons/folder.svg) ;
 - clique sur `drive` → `MyDrive`.
 
----
-
-## 3. Lire et écrire des fichiers
 
 ### Écrire un fichier dans Drive
 
@@ -87,7 +82,7 @@ print(contenu)
 
 ---
 
-## 4. Conseils pratiques
+## 3. Conseils pratiques
 
 - **Toujours monter le Drive** au début de ton notebook.
 

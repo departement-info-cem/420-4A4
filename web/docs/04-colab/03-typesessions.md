@@ -1,10 +1,12 @@
 # 🖥️ Types de sessions
 
-Dans Google Colab, tu peux travailler avec **trois types de sessions** :
+Dans [Google Colab](https://colab.research.google.com/)![colab](../../static/img/icons/colab.svg), tu peux travailler avec **trois types de sessions** :
 
-1. Session **hébergée avec CPU** (par défaut)
+1. Session **hébergée avec CPU**
 2. Session **hébergée avec accélérateur GPU**
 3. Une **session locale**, qui utilise ta propre machine
+
+(4. Nous aurons aussi la possibilité de travailler avec Google Cloud - Colab Enterprise, cela est décrit [ici](/googlecloud/googlecloud1))
 
 ---
 
@@ -18,7 +20,8 @@ Dans Google Colab, tu peux travailler avec **trois types de sessions** :
 5. Clique sur **Enregistrer**.
 
 Ta session utilise maintenant une machine cloud avec **CPU uniquement**, ce n'est pas très rapide mais 
-ça te permet de travailler même si tu n'as plus de quotas pour des machines avec accélérateur.
+ça te permet de travailler même si tu n'as plus de quotas pour des machines avec accélérateur. Les sessions
+CPU sont aussi sujet à quotas mais ces derniers sont très permissifs.
 
 ---
 
@@ -50,7 +53,7 @@ if torch.cuda.is_available():
 
 :::warning
 - Vous ne pouvez avoir qu'une seule session GPU d'ouverte.
-- Le temps de session GPU est **limité** (quotas Google).
+- Le temps de session GPU est **limité** (quotas Google), vous pourriez ne plus avoir accès aux accélérateurs sans pré-avis.
 - En cas d’inactivité, la session peut être **coupée**.
 
 Nous allons donc devoir utiliser des stratégies pour sauvegarder nos modèles pendant l'entraînement ([Callbacks Keras](/keras/callbacks)).
@@ -84,22 +87,24 @@ Inconvénients :
 ### 3.2. Lancer et connecter le serveur
 
 
-1. Lance un serveur Jupyter local :
+1. Sur les machines des laboratoires il faut d'abord installer une librairie manquante:
+   ```bash
+   pip install tensorflow
+   ```
+2. Lance un serveur Jupyter local :
    ```bash
    jupyter notebook --NotebookApp.allow_origin='https://colab.research.google.com' --port=8888 --NotebookApp.port_retries=0 --NotebookApp.allow_credentials=True
    ```
-2. Le programme affichera dans la console l'URL du serveur: `http://localhost:8888/?token=...`, copie le.
-3. Dans Colab, clique sur `Connecter` (en haut à droite), puis sur la petite flèche ▾ et clique sur l’option `Connecter à un environnement d'éxecution local`.
-4. Colle l'URL dans le champ correspondant.
+3. Le programme affichera dans la console l'URL du serveur: `http://localhost:8888/?token=...`, copie le.
+4. Dans Colab, clique sur `Connecter` (en haut à droite), puis sur la petite flèche ▾ et clique sur l’option `Connecter à un environnement d'éxecution local`.
+5. Colle l'URL dans le champ correspondant.
 
 Une fois connecté, l’exécution des cellules se fera **sur ta machine**, mais l’interface restera celle de Google Colab.
 
-:::danger
-Pour pouvoir rouler le code des laboratoires, il faudra installer toutes les librairies nécessaires (**Numpy**, **Keras**, **PyTorch** ...). Il faudra aussi configurer ton GPU, si tu en as un, pour qu'il soit utilisable.
+:::info
+Pour pouvoir rouler le code des travaux sur ton ordinateur personnel, il faudra installer toutes les librairies nécessaires (**Numpy**, **Keras**, **PyTorch** ...). Il faudra aussi configurer ton GPU, si tu en as un, pour qu'il soit utilisable.
 
-Les machines des laboratoires ont les librairies nécessaires mais pas de GPU. tu ne pourras également pas lier le Google Drive de la façon que nous avons vu. 
-
-Ce type de session ne devra être utilisée qu'**en dernier recours**.
+Les machines des laboratoires peuvent être plus rapides que les sessions CPU hébergées, par contre tu ne pourras pas monter le Google Drive de la façon que nous avons vu, tu devras donc sauvegarder tes fichiers manuellement. 
 :::
 
 ---

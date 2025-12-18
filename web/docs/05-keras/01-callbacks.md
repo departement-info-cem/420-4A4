@@ -10,9 +10,9 @@ Pour chaque expérience, on va créer les dossiers suivants:
 
 ```python
 dossier_experience = "drive/MyDrive/4A4/experiences/laboratoire1/" + str(id_experience)
-dossier_experience_sauvegarde = dossier_experience + "/sauvegarde"
+dossier_sauvegarde = dossier_experience + "/sauvegarde"
 os.makedirs(dossier_experience, exist_ok=True)
-os.makedirs(dossier_experience_sauvegarde, exist_ok=True)
+os.makedirs(dossier_sauvegarde, exist_ok=True)
 ```
 
 ---
@@ -21,7 +21,7 @@ os.makedirs(dossier_experience_sauvegarde, exist_ok=True)
 
 ```python
 callback_sauvegarde = keras.callbacks.BackupAndRestore(
-    backup_dir=dossier_experience_sauvegarde,
+    backup_dir=dossier_sauvegarde,
     save_freq=1000,
     double_checkpoint=True,
     delete_checkpoint=False)
@@ -44,7 +44,7 @@ callback_meilleur = keras.callbacks.ModelCheckpoint(
     filepath=fichier_sauvegarde,
     monitor='val_acc',
     mode='max',
-    save_freq=20,
+    save_freq=1000,
     save_best_only=True)
 ```
 
