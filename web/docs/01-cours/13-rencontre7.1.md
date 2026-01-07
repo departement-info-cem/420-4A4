@@ -1,6 +1,6 @@
 ---
 title: Rencontre 7.1
-description: Examen 1 formatif
+description: Examen intra formatif
 ---
 
-# Examen 1 formatif
+# Examen intra formatif

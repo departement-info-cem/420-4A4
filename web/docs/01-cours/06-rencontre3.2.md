@@ -1,6 +1,6 @@
 ---
 title: Rencontre 3.2
-description: Application - MNIST/Keras
+description: Examen Quiz - Application - MNIST/Keras
 ---
 
-# Application - MNIST/Keras
+# Examen Quiz - Application - MNIST/Keras
