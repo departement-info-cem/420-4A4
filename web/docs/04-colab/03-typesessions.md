@@ -93,7 +93,7 @@ Inconvénients :
    ```
 2. Lance un serveur Jupyter local :
    ```bash
-   jupyter notebook --NotebookApp.allow_origin='https://colab.research.google.com' --port=8888 --NotebookApp.port_retries=0 --NotebookApp.allow_credentials=True
+   jupyter notebook --NotebookApp.allow_origin="https://colab.research.google.com" --port=8888 --NotebookApp.port_retries=0 --NotebookApp.allow_credentials=True
    ```
 3. Le programme affichera dans la console l'URL du serveur: `http://localhost:8888/?token=...`, copie le.
 4. Dans Colab, clique sur `Connecter` (en haut à droite), puis sur la petite flèche ▾ et clique sur l’option `Connecter à un environnement d'éxecution local`.

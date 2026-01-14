@@ -25,7 +25,7 @@ Dans une [session](/colab/typesessions) locale ou sur [Google Cloud](/googleclou
 
    ```python
    from google.colab import drive
-   drive.mount('/content/drive')
+   drive.mount("/content/drive")
    ```
 
 3. Exécute la cellule (`Ctrl` + `Entrée`).

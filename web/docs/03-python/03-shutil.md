@@ -8,14 +8,14 @@ C'est particulièrement pratique dans Google Colab pour télécharger tout un do
 
 La fonction `make_archive` prend principalement :
 1. Le nom du fichier de sortie (sans l'extension).
-2. Le format de l'archive (ex: `'zip'`, `'tar'`).
+2. Le format de l'archive (ex: `"zip"`, `"tar"`).
 3. Le dossier racine à compresser.
 
 ```python
 import shutil
 
-# Créer une archive 'sauvegarde.zip' contenant tout le contenu du dossier 'drive'
-shutil.make_archive("sauvegarde", 'zip', "drive")
+# Créer une archive "sauvegarde.zip" contenant tout le contenu du dossier "drive"
+shutil.make_archive("sauvegarde", "zip", "drive")
 ```
 
 ## Décompresser une archive

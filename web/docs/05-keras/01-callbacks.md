@@ -9,7 +9,7 @@ Un callback permet d'exécuter une action (ici sauvegarder des données) à diff
 Pour chaque expérience, on va créer les dossiers suivants:
 
 ```python
-dossier_experience = "drive/MyDrive/4A4/experiences/laboratoire1/" + str(id_experience)
+dossier_experience = "drive/MyDrive/4A4/Experiences/Lab1/" + str(id_experience)
 dossier_sauvegarde = dossier_experience + "/sauvegarde"
 os.makedirs(dossier_experience, exist_ok=True)
 os.makedirs(dossier_sauvegarde, exist_ok=True)
@@ -39,18 +39,18 @@ Utilité :
 ## 3. `ModelCheckpoint` : garder le « meilleur » modèle 🏆
 
 ```python
-fichier_sauvegarde = dossier_experience + '/meilleur.model.keras'
+fichier_sauvegarde = dossier_experience + "/meilleur.model.keras"
 callback_meilleur = keras.callbacks.ModelCheckpoint(
     filepath=fichier_sauvegarde,
-    monitor='val_acc',
-    mode='max',
+    monitor="val_acc",
+    mode="max",
     save_freq=1000,
     save_best_only=True)
 ```
 
 - `filepath` : chemin du fichier où sera enregistré le **meilleur modèle**.
-- `monitor='val_acc'` : métrique surveillée (ici, la **précision sur le jeu de validation**).
-- `mode='max'` : plus la valeur de `val_acc` est **grande**, mieux c'est.
+- `monitor="val_acc"` : métrique surveillée (ici, la **précision sur le jeu de validation**).
+- `mode="max"` : plus la valeur de `val_acc` est **grande**, mieux c'est.
 - `save_freq=1000` : vérifie/sauvegarde toutes les 1000 itérations (batches).
 - `save_best_only=True` : n'écrit le fichier que si le modèle actuel est **meilleur** que le précédent.
 
@@ -68,7 +68,7 @@ meilleur_model = keras.models.load_model(fichier_sauvegarde)
 ## 4. `CSVLogger` : journal d'entraînement dans un fichier CSV 📈
 
 ```python
-fichier_log = dossier_experience + '/log.csv'
+fichier_log = dossier_experience + "/log.csv"
 callback_log = keras.callbacks.CSVLogger(fichier_log, append=True)
 ```
 
@@ -137,8 +137,8 @@ Nous allons avoir dans le drive une arborescence de dossier de la forme :
 drive/
 └── MyDrive/
     └── 4A4/
-        └── experiences/
-            └── laboratoire1/
+        └── Experiences/
+            └── Laboratoire1/
                 └── <id_experience>/
                     ├── meilleur.model.keras    # meilleur modèle sauvegardé (ModelCheckpoint)
                     ├── log.csv                 # journal d'entraînement (CSVLogger)
@@ -149,7 +149,7 @@ drive/
 
 - `<id_experience>` : identifiant unique de l'expérience (ex: hyper-paramètres, type de modèle ...).
 - `sauvegarde/` : contient les fichiers nécessaires pour reprendre un entraînement interrompu.
-- `best.model.keras` : modèle à recharger pour l'évaluation ou la suite des expériences.
+- `meilleur.model.keras` : modèle à recharger pour l'évaluation ou la suite des expériences.
 - `log.csv` : fichier à charger pour tracer les courbes d'apprentissage.
 
 :::

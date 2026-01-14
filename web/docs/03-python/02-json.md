@@ -35,7 +35,7 @@ Pour sauvegarder ce dictionnaire dans un fichier :
 fichier_config = "config.json"
 
 # Ouverture du fichier en mode écriture ('w')
-with open(fichier_config, 'w') as f:
+with open(fichier_config, "w") as f:
     json.dump(hyperparametres, f, indent=4)
 ```
 
@@ -53,9 +53,9 @@ Pour réutiliser ces paramètres plus tard ou dans un autre script, vous pouvez 
 fichier_config = "config.json"
 
 # Ouverture du fichier en mode lecture ('r')
-with open(fichier_config, 'r') as f:
+with open(fichier_config, "r") as f:
     params_charges = json.load(f)
 
-print(f"Learning rate : {params_charges['learning_rate']}") 
+print(f"Learning rate : {params_charges["learning_rate"]}") 
 # >>> Learning rate : 0.001
 ```
