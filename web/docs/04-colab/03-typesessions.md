@@ -56,7 +56,7 @@ if torch.cuda.is_available():
 - Le temps de session GPU est **limité** (quotas Google), vous pourriez ne plus avoir accès aux accélérateurs sans pré-avis.
 - En cas d’inactivité, la session peut être **coupée**.
 
-Nous allons donc devoir utiliser des stratégies pour sauvegarder nos modèles pendant l'entraînement ([Callbacks Keras](/keras/callbacks)).
+Nous allons donc devoir utiliser des stratégies pour sauvegarder nos modèles pendant l'entraînement ([Callbacks Keras](/numpykeras/callbacks)).
 :::
 
 ---

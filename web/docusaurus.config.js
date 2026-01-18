@@ -1,6 +1,8 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
 import { themes } from "prism-react-renderer";
+import remarkMath from 'remark-math';
+import rehypeKatex from 'rehype-katex';
 
 const siteConfig = require("./config");
 
@@ -41,6 +43,8 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
+          remarkPlugins: [remarkMath],
+          rehypePlugins: [rehypeKatex],
           sidebarPath: require.resolve("./sidebars.js"),
           routeBasePath: "/",
           editUrl: `https://github.com/departement-info-cem/${siteConfig.nomUrl}/tree/main/web`,
@@ -50,6 +54,16 @@ const config = {
         },
       }),
     ],
+  ],
+
+  stylesheets: [
+    {
+      href: 'https://cdn.jsdelivr.net/npm/katex@0.13.24/dist/katex.min.css',
+      type: 'text/css',
+      integrity:
+        'sha384-odtC+0UGzzFL/6PNoE8rX/SPcQDXBJ+uRepguP4QkPCm2LBxH3FA3y+fKSiJ+AmM',
+      crossorigin: 'anonymous',
+    },
   ],
 
   plugins: [require.resolve("./plugins/docs-metadata")],
@@ -100,8 +114,8 @@ const config = {
           {
             type: "docSidebar",
             position: "left",
-            sidebarId: "keras",
-            label: "Keras",
+            sidebarId: "numpykeras",
+            label: "NumPy / Keras",
           },
           {
             type: "docSidebar",
@@ -115,7 +129,7 @@ const config = {
             position: "right",
           },
           {
-            label: "4A3 (Projet d'intégration)",
+            label: "4A3 (Projet scientifique)",
             href: `https://info.cegepmontpetit.ca/360-4A3/`,
             position: "right",
           },

@@ -1,4 +1,4 @@
-# 📞 Callbacks
+# 📞 Callbacks (Keras)
 
 Dans nos scripts d'entraînement, on va utiliser **trois callbacks Keras**.
 

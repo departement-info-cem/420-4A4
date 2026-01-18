@@ -26,13 +26,15 @@
     "raw-loader": "^4.0.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-player": "^2.14.1"
+    "react-player": "^2.14.1",
+    "rehype-katex": "^7.0.1",
+    "remark-math": "^6.0.0"
   },
   "devDependencies": {
     "@docusaurus/module-type-aliases": "^3.9.2",
     "@docusaurus/tsconfig": "^3.9.2",
     "@docusaurus/types": "^3.9.2",
-    "ts-node": "^10.9.2",
+    "ts-node": "^1.7.1",
     "typescript": "~5.2.2"
   },
   "browserslist": {
