@@ -10,7 +10,7 @@ const sidebars = {
       customProps: { // Attention, il faut recompiler à chaque modification dans sidebar.js pour que les modifications s'appliquent.
         calendrier: {
           "Xavier Glorot": [
-            {"1010": "2026-01-22"}  // Date du cours pour le groupe 1010 du le Prof 1
+            {"1010": "2026-01-27"}  // Date du cours pour le groupe 1010 du le Prof 1
           ],
         },
         tooltip: "visible" // Valeurs possibles visible ou cache, valeur par défaut "visible"
@@ -23,7 +23,7 @@ const sidebars = {
       customProps: {
         calendrier: {
           "Xavier Glorot": [
-            {"1010": "2026-01-27"} // Date du cours pour le groupe 1010 du le Prof 1
+            {"1010": "2026-01-29"} // Date du cours pour le groupe 1010 du le Prof 1
           ],
         },
       }
@@ -35,7 +35,7 @@ const sidebars = {
       customProps: {
         calendrier: {
           "Xavier Glorot": [
-            {"1010": "2026-01-29"}
+            {"1010": "2026-02-03"}
           ],
         },
       }
@@ -47,7 +47,7 @@ const sidebars = {
       customProps: {
         calendrier: {
           "Xavier Glorot": [
-            {"1010": "2026-02-03"}
+            {"1010": "2026-02-05"}
           ],
         },
       }
@@ -59,7 +59,7 @@ const sidebars = {
       customProps: {
         calendrier: {
           "Xavier Glorot": [
-            {"1010": "2026-02-05"}
+            {"1010": "2026-02-10"}
           ],
         },
       }
@@ -71,7 +71,7 @@ const sidebars = {
       customProps: {
         calendrier: {
           "Xavier Glorot": [
-            {"1010": "2026-02-10"}
+            {"1010": "2026-02-12"}
           ],
         },
       },
@@ -84,7 +84,7 @@ const sidebars = {
       customProps: {
         calendrier: {
           "Xavier Glorot": [
-            {"1010": "2026-02-12"}
+            {"1010": "2026-02-17"}
           ],
         },
       }
@@ -96,7 +96,7 @@ const sidebars = {
       customProps: {
         calendrier: {
           "Xavier Glorot": [
-            {"1010": "2026-02-17"}
+            {"1010": "2026-02-19"}
           ],
         },
       },
@@ -108,7 +108,7 @@ const sidebars = {
       customProps: {
         calendrier: {
           "Xavier Glorot": [
-            {"1010": "2026-02-19"}
+            {"1010": "2026-02-24"}
           ],
         },
         avancementLabel: "TP1",
@@ -122,7 +122,7 @@ const sidebars = {
       customProps: {
         calendrier: {
           "Xavier Glorot": [
-            {"1010": "2026-02-24"}
+            {"1010": "2026-02-26"}
           ],
         },
         avancementLabel: "TP1",
@@ -136,7 +136,7 @@ const sidebars = {
       customProps: {
         calendrier: {
           "Xavier Glorot": [
-            {"1010": "2026-02-26"}
+            {"1010": "2026-03-03"}
           ],
         },
         avancementLabel: "TP1",
@@ -150,7 +150,7 @@ const sidebars = {
       customProps: {
         calendrier: {
           "Xavier Glorot": [
-            {"1010": "2026-03-03"}
+            {"1010": "2026-03-05"}
           ],
         },
       },
@@ -163,7 +163,7 @@ const sidebars = {
       customProps: {
         calendrier: {
           "Xavier Glorot": [
-            {"1010": "2026-03-05"}
+            {"1010": "2026-03-10"}
           ],
         },
       }
@@ -175,7 +175,7 @@ const sidebars = {
       customProps: {
         calendrier: {
           "Xavier Glorot": [
-            {"1010": "2026-03-10"}
+            {"1010": "2026-03-12"}
           ],
         }
       },
@@ -188,7 +188,7 @@ const sidebars = {
       customProps: {
         calendrier: {
           "Xavier Glorot": [
-            {"1010": "2026-03-12"}
+            {"1010": "2026-03-24"}
           ],
         },
       }
@@ -200,7 +200,7 @@ const sidebars = {
       customProps: {
         calendrier: {
           "Xavier Glorot": [
-            {"1010": "2026-03-24"}
+            {"1010": "2026-03-26"}
           ],
         },
       }
@@ -212,7 +212,7 @@ const sidebars = {
       customProps: {
         calendrier: {
           "Xavier Glorot": [
-            {"1010": "2026-03-26"}
+            {"1010": "2026-04-02"}
           ],
         },
         avancementLabel: "TP2",
@@ -226,7 +226,7 @@ const sidebars = {
       customProps: {
         calendrier: {
           "Xavier Glorot": [
-            {"1010": "2026-03-31"}
+            {"1010": "2026-04-07"}
           ],
         },
         avancementLabel: "TP2",
@@ -240,7 +240,7 @@ const sidebars = {
       customProps: {
         calendrier: {
           "Xavier Glorot": [
-            {"1010": "2026-04-07"}
+            {"1010": "2026-04-14"}
           ],
         },
         avancementLabel: "TP2",
@@ -254,7 +254,7 @@ const sidebars = {
       customProps: {
         calendrier: {
           "Xavier Glorot": [
-            {"1010": "2026-04-09"}
+            {"1010": "2026-04-16"}
           ],
         },
       },
@@ -267,7 +267,7 @@ const sidebars = {
       customProps: {
         calendrier: {
           "Xavier Glorot": [
-            {"1010": "2026-04-16"}
+            {"1010": "2026-04-21"}
           ],
         },
       }
@@ -279,7 +279,7 @@ const sidebars = {
       customProps: {
         calendrier: {
           "Xavier Glorot": [
-            {"1010": "2026-04-21"}
+            {"1010": "2026-04-23"}
           ],
         },
       }
@@ -291,7 +291,7 @@ const sidebars = {
       customProps: {
         calendrier: {
           "Xavier Glorot": [
-            {"1010": "2026-04-23"}
+            {"1010": "2026-04-28"}
           ],
         },
       }
@@ -303,7 +303,7 @@ const sidebars = {
       customProps: {
         calendrier: {
           "Xavier Glorot": [
-            {"1010": "2026-04-28"}
+            {"1010": "2026-04-30"}
           ],
         },
       }
@@ -315,7 +315,7 @@ const sidebars = {
       customProps: {
         calendrier: {
           "Xavier Glorot": [
-            {"1010": "2026-04-30"}
+            {"1010": "2026-05-05"}
           ],
         },
         avancementLabel: "TP3",
@@ -329,7 +329,7 @@ const sidebars = {
       customProps: {
         calendrier: {
           "Xavier Glorot": [
-            {"1010": "2026-05-05"}
+            {"1010": "2026-05-07"}
           ],
         },
         avancementLabel: "TP3",
@@ -343,7 +343,7 @@ const sidebars = {
       customProps: {
         calendrier: {
           "Xavier Glorot": [
-            {"1010": "2026-05-07"}
+            {"1010": "2026-05-12"}
           ],
         },
         avancementLabel: "TP3",
@@ -357,7 +357,7 @@ const sidebars = {
       customProps: {
         calendrier: {
           "Xavier Glorot": [
-            {"1010": "2026-05-12"}
+            {"1010": "2026-05-14"}
           ],
         },
         avancementLabel: "TP3",
@@ -371,7 +371,7 @@ const sidebars = {
       customProps: {
         calendrier: {
           "Xavier Glorot": [
-            {"1010": "2026-05-19"}
+            {"1010": "2026-05-21"}
           ],
         }
       },
@@ -384,7 +384,7 @@ const sidebars = {
       customProps: {
         calendrier: {
           "Xavier Glorot": [
-            {"1010": "2026-05-28"}
+            {"1010": "2026-05-26"}
           ],
         }
       },
