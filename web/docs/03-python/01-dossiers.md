@@ -25,33 +25,17 @@ print(f"Dossier courant : {dossier_courant}")
 
 ```python
 # Lister le dossier courant
-contenu = os.listdir()
-print("Contenu du dossier :", contenu)
+contenu = os.listdir("dossier_parent/dossier_à_lister")
+print("Contenu du dossier dossier_parent/dossier_à_lister:", contenu)
 
-# Lister un dossier spécifique (exemple)
-# contenu_specifique = os.listdir('C:/Users/Nom/Documents')
-```
-
-## Créer un dossier : `os.mkdir()`
-
-`os.mkdir()` crée un nouveau dossier. Si le dossier existe déjà, une erreur `FileExistsError` est levée. Cette fonction ne peut créer qu'un seul niveau de dossier à la fois (le dossier parent doit exister).
-
-```python
-nom_dossier = "nouveau_dossier"
-
-try:
-    os.mkdir(nom_dossier)
-    print(f"Dossier '{nom_dossier}' créé.")
-except FileExistsError:
-    print(f"Le dossier '{nom_dossier}' existe déjà.")
 ```
 
 ## Créer une arborescence de dossiers : `os.makedirs()`
 
-`os.makedirs()` est plus puissant que `os.mkdir()` car il permet de créer des dossiers récursivement (c'est-à-dire créer toute une structure de dossiers parents s'ils n'existent pas).
+`os.makedirs()` permet de créer des dossiers récursivement (c'est-à-dire créer toute une structure de dossiers parents s'ils n'existent pas).
 
 ```python
-chemin_arborescence = "dossier_parent/sous_dossier/final"
+chemin_arborescence = "dossier_parent/sous_dossier/sous_sous_dossier"
 
 # exist_ok=True évite l'erreur si le dossier existe déjà
 os.makedirs(chemin_arborescence, exist_ok=True)
