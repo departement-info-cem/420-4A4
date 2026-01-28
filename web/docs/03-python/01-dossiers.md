@@ -24,7 +24,6 @@ print(f"Dossier courant : {dossier_courant}")
 `os.listdir()` retourne une **liste** contenant les noms des fichiers et dossiers dans le répertoire donné. Si aucun argument n'est fourni, elle liste le répertoire courant.
 
 ```python
-# Lister le dossier courant
 contenu = os.listdir("dossier_parent/dossier_à_lister")
 print("Contenu du dossier dossier_parent/dossier_à_lister:", contenu)
 
