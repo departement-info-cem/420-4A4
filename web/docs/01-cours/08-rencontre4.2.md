@@ -1,6 +1,6 @@
 ---
 title: Rencontre 4.2
-description: Optimisation - Généralisation
+description: Application - MNIST/Keras
 ---
 
-# Optimisation - Généralisation
+# Application - MNIST/Keras

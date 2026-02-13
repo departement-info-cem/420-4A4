@@ -1,6 +1,6 @@
 ---
 title: Rencontre 5.2
-description: TP 1
+description: Optimisation - Généralisation
 ---
 
-# TP 1
+# Optimisation - Généralisation

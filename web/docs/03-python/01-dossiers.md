@@ -38,5 +38,5 @@ chemin_arborescence = "dossier_parent/sous_dossier/sous_sous_dossier"
 
 # exist_ok=True évite l'erreur si le dossier existe déjà
 os.makedirs(chemin_arborescence, exist_ok=True)
-print(f"Arborescence '{chemin_arborescence}' créée.")
+print(f"Arborescence {chemin_arborescence} créée.")
 ```

@@ -91,7 +91,7 @@ const sidebars = {
     },
     {
       type: "doc",
-      label: "4.2 - Optimisation - Généralisation",
+      label: "4.2 - Application - MNIST/Keras",
       id: "cours/rencontre4.2",
       customProps: {
         calendrier: {
@@ -111,13 +111,11 @@ const sidebars = {
             {"1010": "2026-02-24"}
           ],
         },
-        avancementLabel: "TP1",
-        avancement: 0.33
       },
     },
     {
       type: "doc",
-      label: "5.2 - TP 1",
+      label: "5.2 - Optimisation - Généralisation",
       id: "cours/rencontre5.2",
       customProps: {
         calendrier: {
@@ -125,8 +123,6 @@ const sidebars = {
             {"1010": "2026-02-26"}
           ],
         },
-        avancementLabel: "TP1",
-        avancement: 0.66
       }
     },
     {
@@ -140,12 +136,12 @@ const sidebars = {
           ],
         },
         avancementLabel: "TP1",
-        avancement: 1.0
+        avancement: 0.5
       }
     },
     {
       type: "doc",
-      label: "6.2 - Les données",
+      label: "6.2 - TP 1",
       id: "cours/rencontre6.2",
       customProps: {
         calendrier: {
@@ -153,8 +149,9 @@ const sidebars = {
             {"1010": "2026-03-05"}
           ],
         },
+        avancementLabel: "TP1",
+        avancement: 1.0
       },
-      "className": "remise-tp1"
     },
     {
       type: "doc",
@@ -166,7 +163,8 @@ const sidebars = {
             {"1010": "2026-03-10"}
           ],
         },
-      }
+      },
+      "className": "remise-tp1"
     },
     {
       type: "doc",
