@@ -11,7 +11,7 @@ Cela te permettra d'utiliser ton Google Drive comme un disque dur partagé pour
 
 
 :::warning
-Dans une [session](/colab/typesessions) locale ou sur [Google Cloud](/googlecloud/googlecloud1) (Colab Enterprise), il n'est pas possible de monter le drive.
+Dans une [session](/colab/typesessions) locale ou sur [Google Cloud](/googlecloud/utilisation) (Colab Enterprise), il n'est pas possible de monter le drive.
 
 **Dans ce cas, il faudra sauvegarder les fichiers manuellement à la fin des exécutions.**
 :::

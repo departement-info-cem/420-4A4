@@ -186,7 +186,7 @@ const sidebars = {
       customProps: {
         calendrier: {
           "Xavier Glorot": [
-            {"1010": "2026-03-24"}
+            {"1010": "2026-03-26"}
           ],
         },
       }
@@ -198,7 +198,7 @@ const sidebars = {
       customProps: {
         calendrier: {
           "Xavier Glorot": [
-            {"1010": "2026-03-26"}
+            {"1010": "2026-04-02"}
           ],
         },
       }
@@ -210,7 +210,7 @@ const sidebars = {
       customProps: {
         calendrier: {
           "Xavier Glorot": [
-            {"1010": "2026-04-02"}
+            {"1010": "2026-04-07"}
           ],
         },
         avancementLabel: "TP2",
@@ -224,7 +224,7 @@ const sidebars = {
       customProps: {
         calendrier: {
           "Xavier Glorot": [
-            {"1010": "2026-04-07"}
+            {"1010": "2026-04-14"}
           ],
         },
         avancementLabel: "TP2",
@@ -238,7 +238,7 @@ const sidebars = {
       customProps: {
         calendrier: {
           "Xavier Glorot": [
-            {"1010": "2026-04-14"}
+            {"1010": "2026-04-16"}
           ],
         },
         avancementLabel: "TP2",
@@ -252,7 +252,7 @@ const sidebars = {
       customProps: {
         calendrier: {
           "Xavier Glorot": [
-            {"1010": "2026-04-16"}
+            {"1010": "2026-04-21"}
           ],
         },
       },
@@ -265,18 +265,6 @@ const sidebars = {
       customProps: {
         calendrier: {
           "Xavier Glorot": [
-            {"1010": "2026-04-21"}
-          ],
-        },
-      }
-    },
-    {
-      type: "doc",
-      label: "11.2 - Enjeux sociétaux",
-      id: "cours/rencontre11.2",
-      customProps: {
-        calendrier: {
-          "Xavier Glorot": [
             {"1010": "2026-04-23"}
           ],
         },
@@ -284,8 +272,8 @@ const sidebars = {
     },
     {
       type: "doc",
-      label: "12.1 - nanoGPT et tinymoliere",
-      id: "cours/rencontre12.1",
+      label: "11.2 - nanoGPT et tinymoliere",
+      id: "cours/rencontre11.2",
       customProps: {
         calendrier: {
           "Xavier Glorot": [
@@ -296,8 +284,8 @@ const sidebars = {
     },
     {
       type: "doc",
-      label: "12.2 - nanoGPT et tinymoliere",
-      id: "cours/rencontre12.2",
+      label: "12.1 - Enjeux sociétaux",
+      id: "cours/rencontre12.1",
       customProps: {
         calendrier: {
           "Xavier Glorot": [

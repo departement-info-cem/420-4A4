@@ -6,7 +6,7 @@ Dans [Google Colab](https://colab.research.google.com/)![colab](../../static/img
 2. Session **hébergée avec accélérateur GPU**
 3. Une **session locale**, qui utilise ta propre machine
 
-(4. Nous aurons aussi la possibilité de travailler avec Google Cloud - Colab Enterprise, cela est décrit [ici](/googlecloud/googlecloud1))
+(4. Nous aurons aussi la possibilité de travailler avec Google Cloud - Colab Enterprise, cela est décrit [ici](/googlecloud/utilisation))
 
 ---
 
