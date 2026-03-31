@@ -29,7 +29,7 @@ Avant de connecter un GPU, vous devez démarrer un environnement d'exécution :
 
 ---
 
-Vous avez maintenant un notebook similaire à ce que vous utilisez dans Google Colab. Il y a cependant **quelques différences** :
+Vous avez maintenant une interface similaire à ce que vous utilisez dans Google Colab. Il y a cependant **quelques différences** :
 
 
 :::tip

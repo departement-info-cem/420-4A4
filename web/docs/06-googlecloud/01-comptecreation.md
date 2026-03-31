@@ -23,8 +23,13 @@ Avant tout, il est important de vous assurer que vous êtes déconnecté de votr
 2. Cliquez sur **Console** en haut à droite.
 3. Cliquez sur le rectangle à côté du logo Google Cloud en haut à gauche.
 4. Cliquez sur **Nouveau projet**.
-5. Donnez-lui un nom et assurez-vous que l'organisation et la ressource parente sont bien **cegepmontpetit.ca**.
+5. Donnez-lui le nom: "projet-*votrenom*-*votreprénom*"
+6. Assurez-vous que l'organisation et la ressource parente soient bien **cegepmontpetit.ca**. Cliquez sur **Créer**.
 6. Attendez que le projet soit créé (vous devriez avoir une confirmation).
+7. Cliquez sur les 3 lignes horizontales à gauche du logo Google Cloud, cliquez sur **IAM et administration**.
+8. Cliquez sur: **+ Accorder l'accès**
+9. Dans **Nouveaux Principaux**, entrez: *xavier.glorot@cegepmontpetit.ca*. Dans **Sélectionnez un rôle**, entrez: *Propriétaire*.
+10. Cliquez sur **Enregistrer**.
 
 ---
 
