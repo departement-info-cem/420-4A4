@@ -15,7 +15,7 @@ Avant de connecter un GPU, vous devez démarrer un environnement d'exécution :
 1. Dans le menu de gauche de **Colab Enterprise**, cliquez sur **Environnements d'exécution**.
 2. Assurez-vous de bien sélectionner la région : `us-west1 (Oregon)`.
 3. Cliquez sur **+ Créer** en haut de la page.
-4. Dans la fenêtre de dialogue à droite, sélectionnez votre modèle d'exécution (voir [la création de compte](/googlecloud/comptecreation#5-créer-un-modèle-dinstance-gpu-%EF%B8%8F)), puis cliquez sur **Créer**.
+4. Dans la fenêtre de dialogue à droite, sélectionnez votre modèle d'exécution (voir [la création de compte](/googlecloud/comptecreation#5-cr%C3%A9er-un-mod%C3%A8le-dex%C3%A9cution-gpu-%EF%B8%8F)), puis cliquez sur **Créer**.
 5. Vous verrez que l'instance va se lancer, il faut attendre qu'elle soit opérationnelle (cela peut prendre quelques minutes).
 
 ---
