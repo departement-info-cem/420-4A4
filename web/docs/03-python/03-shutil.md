@@ -26,3 +26,13 @@ Pour ensuite transférer les fichiers de résultats sur un autre environnement d
 import shutil
 shutil.unpack_archive("sauvegarde.zip", "drive", "zip")
 ```
+
+## Copier un fichier
+
+Avec shutil, on peut également copier des fichiers avec la fonction `copy`:
+
+```python
+import shutil
+# Copier le fichier 'fichier.txt' vers 'dossier/copie_fichier.txt'
+shutil.copy('fichier.txt', 'dossier/copie_fichier.txt')
+```
