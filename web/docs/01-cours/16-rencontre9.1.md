@@ -1,5 +1,5 @@
 ---
-title: Rencontre 8.1
+title: Rencontre 9.1
 description: Réseaux convolutionnels
 ---
 

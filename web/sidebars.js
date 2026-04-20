@@ -181,8 +181,8 @@ const sidebars = {
     },
     {
       type: "doc",
-      label: "8.1 - Réseaux convolutionnels",
-      id: "cours/rencontre8.1",
+      label: "8.2 - Réseaux convolutionnels",
+      id: "cours/rencontre8.2",
       customProps: {
         calendrier: {
           "Xavier Glorot": [
@@ -193,8 +193,8 @@ const sidebars = {
     },
     {
       type: "doc",
-      label: "8.2 - Réseaux convolutionnels",
-      id: "cours/rencontre8.2",
+      label: "9.1 - Réseaux convolutionnels",
+      id: "cours/rencontre9.1",
       customProps: {
         calendrier: {
           "Xavier Glorot": [
@@ -205,8 +205,8 @@ const sidebars = {
     },
     {
       type: "doc",
-      label: "9.1 - TP 2",
-      id: "cours/rencontre9.1",
+      label: "9.2 - TP 2",
+      id: "cours/rencontre9.2",
       customProps: {
         calendrier: {
           "Xavier Glorot": [
@@ -219,8 +219,8 @@ const sidebars = {
     },
     {
       type: "doc",
-      label: "9.2 - TP 2",
-      id: "cours/rencontre9.2",
+      label: "10.1 - TP 2",
+      id: "cours/rencontre10.1",
       customProps: {
         calendrier: {
           "Xavier Glorot": [
@@ -233,8 +233,8 @@ const sidebars = {
     },
     {
       type: "doc",
-      label: "10.1 - TP 2",
-      id: "cours/rencontre10.1",
+      label: "10.2 - TP 2",
+      id: "cours/rencontre10.2",
       customProps: {
         calendrier: {
           "Xavier Glorot": [
@@ -247,8 +247,8 @@ const sidebars = {
     },
     {
       type: "doc",
-      label: "10.2 - Série temporelle, language",
-      id: "cours/rencontre10.2",
+      label: "11.1 - Série temporelle, language",
+      id: "cours/rencontre11.1",
       customProps: {
         calendrier: {
           "Xavier Glorot": [
@@ -260,8 +260,8 @@ const sidebars = {
     },
     {
       type: "doc",
-      label: "11.1 - Transformers",
-      id: "cours/rencontre11.1",
+      label: "11.2 - Série temporelle, language",
+      id: "cours/rencontre11.2",
       customProps: {
         calendrier: {
           "Xavier Glorot": [
@@ -272,8 +272,8 @@ const sidebars = {
     },
     {
       type: "doc",
-      label: "11.2 - nanoGPT et tinymoliere",
-      id: "cours/rencontre11.2",
+      label: "12.1 - Transformers, attention",
+      id: "cours/rencontre12.1",
       customProps: {
         calendrier: {
           "Xavier Glorot": [
@@ -284,8 +284,8 @@ const sidebars = {
     },
     {
       type: "doc",
-      label: "12.1 - Enjeux sociétaux",
-      id: "cours/rencontre12.1",
+      label: "12.2 - Transformers / Enjeux sociétaux",
+      id: "cours/rencontre12.2",
       customProps: {
         calendrier: {
           "Xavier Glorot": [
