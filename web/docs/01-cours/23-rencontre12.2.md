@@ -1,6 +1,6 @@
 ---
 title: Rencontre 12.2
-description: Transformers / Enjeux sociétaux
+description: Transformers
 ---
 
-# Transformers, enjeux sociétaux
+# Transformers

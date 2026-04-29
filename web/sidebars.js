@@ -284,7 +284,7 @@ const sidebars = {
     },
     {
       type: "doc",
-      label: "12.2 - Transformers / Enjeux sociétaux",
+      label: "12.2 - Transformers",
       id: "cours/rencontre12.2",
       customProps: {
         calendrier: {
@@ -296,7 +296,7 @@ const sidebars = {
     },
     {
       type: "doc",
-      label: "13.1 - TP 3",
+      label: "13.1 - Enjeux sociétaux / TP 3",
       id: "cours/rencontre13.1",
       customProps: {
         calendrier: {
