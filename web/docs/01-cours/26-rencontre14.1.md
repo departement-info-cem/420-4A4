@@ -1,6 +1,6 @@
 ---
 title: Rencontre 14.1
-description: TP 3
+description: Enjeux sociétaux / TP 3
 ---
 
-# TP 3
+# TP 3, enjeux sociétaux
