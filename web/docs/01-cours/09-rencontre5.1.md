@@ -1,6 +1,6 @@
 ---
 title: Rencontre 5.1
-description: Optimisation - Généralisation
+description: Application - MNIST
 ---
 
-# Optimisation - Généralisation
+# Application - MNIST

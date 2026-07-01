@@ -1,6 +1,6 @@
 ---
 title: Rencontre 4.1
-description: Application - MNIST/Keras
+description: Introduction à Keras
 ---
 
-# Application - MNIST/Keras
+# Keras

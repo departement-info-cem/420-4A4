@@ -1,6 +1,6 @@
 ---
 title: Rencontre 3.2
-description: Examen Quiz - Application - MNIST/Keras
+description: Examen Quiz - Programmation objet
 ---
 
-# Examen Quiz - Application - MNIST/Keras
+# Examen Quiz, programmation objet, classes

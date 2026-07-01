@@ -66,7 +66,7 @@ const sidebars = {
     },
     {
       type: "doc",
-      label: "3.2 - Application - MNIST/Keras",
+      label: "3.2 - Examen Quiz - Programmation objet",
       id: "cours/rencontre3.2",
       customProps: {
         calendrier: {
@@ -79,7 +79,7 @@ const sidebars = {
     },
     {
       type: "doc",
-      label: "4.1 - Application - MNIST/Keras",
+      label: "4.1 - Introduction à Keras",
       id: "cours/rencontre4.1",
       customProps: {
         calendrier: {
@@ -91,7 +91,7 @@ const sidebars = {
     },
     {
       type: "doc",
-      label: "4.2 - Application - MNIST/Keras",
+      label: "4.2 - Application - MNIST",
       id: "cours/rencontre4.2",
       customProps: {
         calendrier: {
@@ -103,7 +103,7 @@ const sidebars = {
     },
     {
       type: "doc",
-      label: "5.1 - Optimisation - Généralisation",
+      label: "5.1 - Application - MNIST",
       id: "cours/rencontre5.1",
       customProps: {
         calendrier: {
@@ -127,7 +127,7 @@ const sidebars = {
     },
     {
       type: "doc",
-      label: "6.1 - TP 1",
+      label: "6.1 - Optimisation - Généralisation",
       id: "cours/rencontre6.1",
       customProps: {
         calendrier: {
@@ -135,8 +135,6 @@ const sidebars = {
             {"1010": "2026-03-03"}
           ],
         },
-        avancementLabel: "TP1",
-        avancement: 0.5
       }
     },
     {
@@ -150,7 +148,7 @@ const sidebars = {
           ],
         },
         avancementLabel: "TP1",
-        avancement: 1.0
+        avancement: 0.5
       },
     },
     {
@@ -164,7 +162,6 @@ const sidebars = {
           ],
         },
       },
-      "className": "remise-tp1"
     },
     {
       type: "doc",
@@ -181,6 +178,20 @@ const sidebars = {
     },
     {
       type: "doc",
+      label: "8.1 - TP 1",
+      id: "cours/rencontre8.1",
+      customProps: {
+        calendrier: {
+          "Xavier Glorot": [
+            {"1010": "2026-03-05"}
+          ],
+        },
+        avancementLabel: "TP1",
+        avancement: 1.0
+      },
+    },
+    {
+      type: "doc",
       label: "8.2 - Réseaux convolutionnels",
       id: "cours/rencontre8.2",
       customProps: {
@@ -189,7 +200,8 @@ const sidebars = {
             {"1010": "2026-03-26"}
           ],
         },
-      }
+      },
+      "className": "remise-tp1"
     },
     {
       type: "doc",
@@ -247,7 +259,7 @@ const sidebars = {
     },
     {
       type: "doc",
-      label: "11.1 - Série temporelle, language",
+      label: "11.1 - Données textuelles ou Prédictions denses",
       id: "cours/rencontre11.1",
       customProps: {
         calendrier: {
@@ -260,7 +272,7 @@ const sidebars = {
     },
     {
       type: "doc",
-      label: "11.2 - Série temporelle, language",
+      label: "11.2 - Données textuelles ou Prédictions denses",
       id: "cours/rencontre11.2",
       customProps: {
         calendrier: {
@@ -272,7 +284,7 @@ const sidebars = {
     },
     {
       type: "doc",
-      label: "12.1 - Transformers, attention",
+      label: "12.1 - Transformers ou Diffusion",
       id: "cours/rencontre12.1",
       customProps: {
         calendrier: {
@@ -284,7 +296,7 @@ const sidebars = {
     },
     {
       type: "doc",
-      label: "12.2 - Transformers",
+      label: "12.2 - Transformers ou Diffusion",
       id: "cours/rencontre12.2",
       customProps: {
         calendrier: {
