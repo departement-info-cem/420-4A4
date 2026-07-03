@@ -1,6 +1,6 @@
 ---
 title: Rencontre 3.2
-description: Examen Quiz - Programmation objet
+description: Programmation orientée objet
 ---
 
-# Examen Quiz, programmation objet, classes
+# programmation objet, classes

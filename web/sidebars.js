@@ -10,7 +10,7 @@ const sidebars = {
       customProps: { // Attention, il faut recompiler à chaque modification dans sidebar.js pour que les modifications s'appliquent.
         calendrier: {
           "Xavier Glorot": [
-            {"1010": "2026-01-27"}  // Date du cours pour le groupe 1010 du le Prof 1
+            { "1010": "2026-01-27" }  // Date du cours pour le groupe 1010 du le Prof 1
           ],
         },
         tooltip: "visible" // Valeurs possibles visible ou cache, valeur par défaut "visible"
@@ -23,7 +23,7 @@ const sidebars = {
       customProps: {
         calendrier: {
           "Xavier Glorot": [
-            {"1010": "2026-01-29"} // Date du cours pour le groupe 1010 du le Prof 1
+            { "1010": "2026-01-29" } // Date du cours pour le groupe 1010 du le Prof 1
           ],
         },
       }
@@ -35,7 +35,7 @@ const sidebars = {
       customProps: {
         calendrier: {
           "Xavier Glorot": [
-            {"1010": "2026-02-03"}
+            { "1010": "2026-02-03" }
           ],
         },
       }
@@ -47,7 +47,7 @@ const sidebars = {
       customProps: {
         calendrier: {
           "Xavier Glorot": [
-            {"1010": "2026-02-05"}
+            { "1010": "2026-02-05" }
           ],
         },
       }
@@ -59,35 +59,35 @@ const sidebars = {
       customProps: {
         calendrier: {
           "Xavier Glorot": [
-            {"1010": "2026-02-10"}
+            { "1010": "2026-02-10" }
           ],
         },
       }
     },
     {
       type: "doc",
-      label: "3.2 - Examen Quiz - Programmation objet",
+      label: "3.2 - Programmation orientée objet",
       id: "cours/rencontre3.2",
       customProps: {
         calendrier: {
           "Xavier Glorot": [
-            {"1010": "2026-02-12"}
+            { "1010": "2026-02-12" }
           ],
         },
       },
-      "className": "examen"
     },
     {
       type: "doc",
-      label: "4.1 - Introduction à Keras",
+      label: "4.1 - Examen Quiz  - Keras",
       id: "cours/rencontre4.1",
       customProps: {
         calendrier: {
           "Xavier Glorot": [
-            {"1010": "2026-02-17"}
+            { "1010": "2026-02-17" }
           ],
         },
-      }
+      },
+      "className": "examen"
     },
     {
       type: "doc",
@@ -96,7 +96,7 @@ const sidebars = {
       customProps: {
         calendrier: {
           "Xavier Glorot": [
-            {"1010": "2026-02-19"}
+            { "1010": "2026-02-19" }
           ],
         },
       },
@@ -108,7 +108,7 @@ const sidebars = {
       customProps: {
         calendrier: {
           "Xavier Glorot": [
-            {"1010": "2026-02-24"}
+            { "1010": "2026-02-24" }
           ],
         },
       },
@@ -120,7 +120,7 @@ const sidebars = {
       customProps: {
         calendrier: {
           "Xavier Glorot": [
-            {"1010": "2026-02-26"}
+            { "1010": "2026-02-26" }
           ],
         },
       }
@@ -132,7 +132,7 @@ const sidebars = {
       customProps: {
         calendrier: {
           "Xavier Glorot": [
-            {"1010": "2026-03-03"}
+            { "1010": "2026-03-03" }
           ],
         },
       }
@@ -144,7 +144,7 @@ const sidebars = {
       customProps: {
         calendrier: {
           "Xavier Glorot": [
-            {"1010": "2026-03-05"}
+            { "1010": "2026-03-05" }
           ],
         },
         avancementLabel: "TP1",
@@ -158,7 +158,7 @@ const sidebars = {
       customProps: {
         calendrier: {
           "Xavier Glorot": [
-            {"1010": "2026-03-10"}
+            { "1010": "2026-03-10" }
           ],
         },
       },
@@ -170,7 +170,7 @@ const sidebars = {
       customProps: {
         calendrier: {
           "Xavier Glorot": [
-            {"1010": "2026-03-12"}
+            { "1010": "2026-03-12" }
           ],
         }
       },
@@ -183,7 +183,7 @@ const sidebars = {
       customProps: {
         calendrier: {
           "Xavier Glorot": [
-            {"1010": "2026-03-05"}
+            { "1010": "2026-03-05" }
           ],
         },
         avancementLabel: "TP1",
@@ -197,7 +197,7 @@ const sidebars = {
       customProps: {
         calendrier: {
           "Xavier Glorot": [
-            {"1010": "2026-03-26"}
+            { "1010": "2026-03-26" }
           ],
         },
       },
@@ -210,7 +210,7 @@ const sidebars = {
       customProps: {
         calendrier: {
           "Xavier Glorot": [
-            {"1010": "2026-04-02"}
+            { "1010": "2026-04-02" }
           ],
         },
       }
@@ -222,7 +222,7 @@ const sidebars = {
       customProps: {
         calendrier: {
           "Xavier Glorot": [
-            {"1010": "2026-04-07"}
+            { "1010": "2026-04-07" }
           ],
         },
         avancementLabel: "TP2",
@@ -236,7 +236,7 @@ const sidebars = {
       customProps: {
         calendrier: {
           "Xavier Glorot": [
-            {"1010": "2026-04-14"}
+            { "1010": "2026-04-14" }
           ],
         },
         avancementLabel: "TP2",
@@ -250,7 +250,7 @@ const sidebars = {
       customProps: {
         calendrier: {
           "Xavier Glorot": [
-            {"1010": "2026-04-16"}
+            { "1010": "2026-04-16" }
           ],
         },
         avancementLabel: "TP2",
@@ -264,7 +264,7 @@ const sidebars = {
       customProps: {
         calendrier: {
           "Xavier Glorot": [
-            {"1010": "2026-04-21"}
+            { "1010": "2026-04-21" }
           ],
         },
       },
@@ -277,7 +277,7 @@ const sidebars = {
       customProps: {
         calendrier: {
           "Xavier Glorot": [
-            {"1010": "2026-04-23"}
+            { "1010": "2026-04-23" }
           ],
         },
       }
@@ -289,7 +289,7 @@ const sidebars = {
       customProps: {
         calendrier: {
           "Xavier Glorot": [
-            {"1010": "2026-04-28"}
+            { "1010": "2026-04-28" }
           ],
         },
       }
@@ -301,7 +301,7 @@ const sidebars = {
       customProps: {
         calendrier: {
           "Xavier Glorot": [
-            {"1010": "2026-04-30"}
+            { "1010": "2026-04-30" }
           ],
         },
       }
@@ -313,7 +313,7 @@ const sidebars = {
       customProps: {
         calendrier: {
           "Xavier Glorot": [
-            {"1010": "2026-05-05"}
+            { "1010": "2026-05-05" }
           ],
         },
         avancementLabel: "TP3",
@@ -327,7 +327,7 @@ const sidebars = {
       customProps: {
         calendrier: {
           "Xavier Glorot": [
-            {"1010": "2026-05-07"}
+            { "1010": "2026-05-07" }
           ],
         },
         avancementLabel: "TP3",
@@ -341,7 +341,7 @@ const sidebars = {
       customProps: {
         calendrier: {
           "Xavier Glorot": [
-            {"1010": "2026-05-12"}
+            { "1010": "2026-05-12" }
           ],
         },
         avancementLabel: "TP3",
@@ -355,7 +355,7 @@ const sidebars = {
       customProps: {
         calendrier: {
           "Xavier Glorot": [
-            {"1010": "2026-05-14"}
+            { "1010": "2026-05-14" }
           ],
         },
         avancementLabel: "TP3",
@@ -369,7 +369,7 @@ const sidebars = {
       customProps: {
         calendrier: {
           "Xavier Glorot": [
-            {"1010": "2026-05-21"}
+            { "1010": "2026-05-21" }
           ],
         }
       },
@@ -382,7 +382,7 @@ const sidebars = {
       customProps: {
         calendrier: {
           "Xavier Glorot": [
-            {"1010": "2026-05-26"}
+            { "1010": "2026-05-26" }
           ],
         }
       },
@@ -395,25 +395,25 @@ const sidebars = {
       "dirName": "02-tp"
     }
   ],
-    "python": [
+  "python": [
     {
       type: "autogenerated",
       "dirName": "03-python"
     }
   ],
-    "colab": [
+  "colab": [
     {
       type: "autogenerated",
       "dirName": "04-colab"
     }
   ],
-    "numpykeras": [
+  "numpykeras": [
     {
       type: "autogenerated",
       "dirName": "05-numpykeras"
     }
   ],
-    "googlecloud": [
+  "googlecloud": [
     {
       type: "autogenerated",
       "dirName": "06-googlecloud"
