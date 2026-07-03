@@ -99,16 +99,9 @@ plt.show()
 
 ---
 
-## 5. Regrouper les callbacks
+## 5. Utiliser les callbacks
 
-```python
-callback = keras.callbacks.CallbackList([
-    callback_sauvegarde,
-    callback_meilleur,
-    callback_log])
-```
-
-Cette liste de callbacks est ensuite passée à `model.fit(...)`, par exemple :
+Il suffit de passer les callbacks sous forme de liste à `model.fit(...)`, par exemple :
 
 ```python
 history = model.fit(
@@ -117,7 +110,10 @@ history = model.fit(
     epochs=50,
     batch_size=32,
     validation_data=(x_val, y_val),
-    callbacks=[callback])
+    callbacks=[callback_sauvegarde,
+               callback_meilleur,
+               callback_log],
+    )
 ```
 
 ---
@@ -131,7 +127,7 @@ Ainsi, **pendant tout l'entraînement** :
 - un journal détaillé est écrit dans un fichier CSV (`CSVLogger`).
 
 
-Nous allons avoir dans le drive une arborescence de dossier de la forme :
+Nous allons avoir dans le drive une arborescence de dossiers de la forme :
 
 ```text
 drive/

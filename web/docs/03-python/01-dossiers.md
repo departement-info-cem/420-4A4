@@ -1,4 +1,4 @@
-# 📁 Système de dossier
+# 📁 Système de dossiers
 
 Le module `os` de Python permet d'interagir avec le système d'exploitation. Voici comment utiliser quelques fonctions essentielles pour manipuler les dossiers.
 
