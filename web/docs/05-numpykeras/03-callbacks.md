@@ -49,7 +49,7 @@ callback_meilleur = keras.callbacks.ModelCheckpoint(
 ```
 
 - `filepath` : chemin du fichier où sera enregistré le **meilleur modèle**.
-- `monitor="val_accuracy"` : métrique surveillée (ici, la **précision sur le jeu de validation**).
+- `monitor="val_accuracy"` : métrique surveillée (ici, **l'exactitude sur le jeu de validation**).
 - `mode="max"` : plus la valeur de `val_accuracy` est **grande**, mieux c'est.
 - `save_freq=1000` : vérifie/sauvegarde toutes les 1000 itérations (batches).
 - `save_best_only=True` : n'écrit le fichier que si le modèle actuel est **meilleur** que le précédent.
