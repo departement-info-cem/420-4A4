@@ -66,7 +66,7 @@ const sidebars = {
     },
     {
       type: "doc",
-      label: "3.2 - Examen Quiz - Programmation objet",
+      label: "3.2 - Programmation orientée objet",
       id: "cours/rencontre3.2",
       customProps: {
         calendrier: {
@@ -75,11 +75,10 @@ const sidebars = {
           ],
         },
       },
-      "className": "examen"
     },
     {
       type: "doc",
-      label: "4.1 - Introduction à Keras",
+      label: "4.1 - Examen Quiz - Keras",
       id: "cours/rencontre4.1",
       customProps: {
         calendrier: {
@@ -87,7 +86,8 @@ const sidebars = {
             {"1010": "2026-02-17"}
           ],
         },
-      }
+      },
+      "className": "examen"
     },
     {
       type: "doc",

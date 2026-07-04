@@ -1,6 +1,6 @@
 ---
 title: Rencontre 4.1
-description: Introduction à Keras
+description: Examen Quiz - Keras
 ---
 
-# Keras
+# Examen Quiz, Keras
