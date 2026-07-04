@@ -42,20 +42,20 @@ Utilité :
 fichier_sauvegarde = dossier_experience + "/meilleur.model.keras"
 callback_meilleur = keras.callbacks.ModelCheckpoint(
     filepath=fichier_sauvegarde,
-    monitor="val_acc",
+    monitor="val_accuracy",
     mode="max",
     save_freq=1000,
     save_best_only=True)
 ```
 
 - `filepath` : chemin du fichier où sera enregistré le **meilleur modèle**.
-- `monitor="val_acc"` : métrique surveillée (ici, la **précision sur le jeu de validation**).
-- `mode="max"` : plus la valeur de `val_acc` est **grande**, mieux c'est.
+- `monitor="val_accuracy"` : métrique surveillée (ici, **l'exactitude sur le jeu de validation**).
+- `mode="max"` : plus la valeur de `val_accuracy` est **grande**, mieux c'est.
 - `save_freq=1000` : vérifie/sauvegarde toutes les 1000 itérations (batches).
 - `save_best_only=True` : n'écrit le fichier que si le modèle actuel est **meilleur** que le précédent.
 
 Utilité :
-- À la fin de l'entraînement, tu peux recharger **le meilleur modèle obtenu** (meilleure `val_acc`), et pas simplement le dernier état.
+- À la fin de l'entraînement, tu peux recharger **le meilleur modèle obtenu** (meilleure `val_accuracy`), et pas simplement le dernier état.
 
 Exemple de rechargement :
 
@@ -92,7 +92,7 @@ import matplotlib.pyplot as plt
 
 df = pd.read_csv(fichier_log)
 plt.plot(df["loss"], label="loss")
-plt.plot(df["val_acc"], label="val_acc")
+plt.plot(df["val_accuracy"], label="val_accuracy")
 plt.legend()
 plt.show()
 ```
