@@ -129,8 +129,8 @@ const config = {
             position: "right",
           },
           {
-            label: "4A3 (Projet scientifique)",
-            href: `https://info.cegepmontpetit.ca/360-4A3/`,
+            label: "Documentation Keras",
+            href: `https://keras.io/api/`,
             position: "right",
           },
         ],
