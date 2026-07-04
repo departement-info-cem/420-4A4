@@ -23,6 +23,6 @@ Voici les **Layers** Keras que nous allons le plus utiliser dans le cours.
 
 ## Couches utilitaires
 * [**Flatten**](https://keras.io/api/layers/reshaping_layers/flatten/)
-* [**Upsampling**](https://keras.io/api/layers/reshaping_layers/up_sampling2d/)
+* [**Upsampling2D**](https://keras.io/api/layers/reshaping_layers/up_sampling2d/)
 * [**Concatenate**](https://keras.io/api/layers/merging_layers/concatenate/)
 * [**Image augmentation**](https://keras.io/api/layers/preprocessing_layers/image_augmentation/)

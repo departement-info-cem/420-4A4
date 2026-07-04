@@ -86,18 +86,13 @@ Inconvénients :
 
 ### 3.2. Lancer et connecter le serveur
 
-
-1. Sur les machines des laboratoires il faut d'abord installer une librairie manquante:
-   ```bash
-   pip install tensorflow
-   ```
-2. Lance un serveur Jupyter local :
+1. Lance un serveur Jupyter local dans un terminal :
    ```bash
    jupyter notebook --NotebookApp.allow_origin="https://colab.research.google.com" --port=8888 --NotebookApp.port_retries=0 --NotebookApp.allow_credentials=True
    ```
-3. Le programme affichera dans la console l'URL du serveur: `http://localhost:8888/?token=...`, copie le.
-4. Dans Colab, clique sur `Connecter` (en haut à droite), puis sur la petite flèche ▾ et clique sur l’option `Connecter à un environnement d'éxecution local`.
-5. Colle l'URL dans le champ correspondant.
+2. Le programme affichera dans le terminal l'URL du serveur: `http://localhost:8888/?token=...`, copie le.
+3. Dans Colab, clique sur `Connecter` (en haut à droite), puis sur la petite flèche ▾ et clique sur l’option `Connecter à un environnement d'exécution local`.
+4. Colle l'URL dans le champ correspondant.
 
 Une fois connecté, l’exécution des cellules se fera **sur ta machine**, mais l’interface restera celle de Google Colab.
 
