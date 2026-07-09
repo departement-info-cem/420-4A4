@@ -1,22 +1,28 @@
 # 🔢 Produit matriciel (NumPy)
 
-La fonction `np.dot` est fondamentale en NumPy pour effectuer des multiplications de matrices et des produits scalaires. Elle est omniprésente en science des données et en apprentissage machine.
+Le produit matriciel est une opération mathématique omniprésente en science des données. Il s'applique sur **deux matrices**. Le produit matriciel d'une matrice $A$ par une matrice $B$ s'écrit: 
+
+$$
+A \cdot B
+$$
+
+En NumPy, on peut calculer le produit matriciel avec la fonction `np.dot`.
 
 ## Qu'est-ce que le produit matriciel ?
 
 Le produit matriciel n'est pas une simple multiplication élément par élément. C'est une opération qui combine les rangées de la première matrice avec les colonnes de la seconde.
 
-Pour multiplier une matrice $A$ par une matrice $B$:
+Pour faire le produit matriciel d'une matrice $A$ par une matrice $B$:
 1.  Le nombre de **colonnes** de $A$ doit être égal au nombre de **rangées** de $B$.
 2.  La matrice résultante aura le nombre de **rangées** de $A$ et le nombre de **colonnes** de $B$.
-
-Imaginez que nous voulons calculer $C = A \cdot B$.
 
 ### Formule mathématique
 
 Chaque élément $c_{ij}$ de la matrice résultat est la somme des produits des éléments de la rangée $i$ de $A$ et de la colonne $j$ de $B$.
 
-$$c_{ij} = \sum_k a_{ik} b_{kj}$$
+$$
+c_{ij} = \sum_k a_{ik} b_{kj}
+$$
 
 Cela correspond mathématiquement au **produit scalaire** du vecteur rangée $i$ de $A$ avec le vecteur colonne $j$ de $B$.
 
@@ -39,40 +45,99 @@ $$
 Calculons le résultat :
 
 *   **Position (0,0)** : rangée 0 de A $\cdot$ colonne 0 de B
-    $$ (1 \times 7) + (2 \times 9) + (3 \times 11) = 7 + 18 + 33 = 58 $$
+    $$ \textcolor{red}{( 1 \times 7 )} + \textcolor{green}{( 2 \times 9 )} + \textcolor{blue}{( 3 \times 11 )} = \textcolor{red}{7} + \textcolor{green}{18} + \textcolor{blue}{33} = \textcolor{purple}{58} $$
 
     $$
     \begin{bmatrix} 
-    \textcolor{red}{1} & \textcolor{red}{2} & \textcolor{red}{3} \\
+    \textcolor{red}{\textbf{1}} & \textcolor{green}{\textbf{2}} & \textcolor{blue}{\textbf{3}} \\
     4 & 5 & 6
     \end{bmatrix} \cdot
      \begin{bmatrix} 
-    \textcolor{red}{7} & 8 \\
-    \textcolor{red}{9} & 10 \\
-    \textcolor{red}{11} & 12 
+    \textcolor{red}{\textbf{7}} & 8 \\
+    \textcolor{green}{\textbf{9}} & 10 \\
+    \textcolor{blue}{\textbf{11}} & 12 
     \end{bmatrix} =
     \begin{bmatrix} 
-        \textcolor{red}{58} & ... \\
+        \textcolor{purple}{58} & ... \\
         ... & ... 
     \end{bmatrix}
     $$
 
 *   **Position (0,1)** : rangée 0 de A $\cdot$ colonne 1 de B
-    $$ (1 \times 8) + (2 \times 10) + (3 \times 12) = 8 + 20 + 36 = 64 $$
+    $$ \textcolor{red}{( 1 \times 8 )} + \textcolor{green}{( 2 \times 10 )} + \textcolor{blue}{( 3 \times 12 )} = \textcolor{red}{8} + \textcolor{green}{20} + \textcolor{blue}{36} = \textcolor{purple}{64} $$
+
+    $$
+    \begin{bmatrix} 
+    \textcolor{red}{\textbf{1}} & \textcolor{green}{\textbf{2}} & \textcolor{blue}{\textbf{3}} \\
+    4 & 5 & 6
+    \end{bmatrix} \cdot
+     \begin{bmatrix} 
+    7 & \textcolor{red}{\textbf{8}} \\
+    9 &\textcolor{green}{\textbf{10}} \\
+    11 & \textcolor{blue}{\textbf{12}} 
+    \end{bmatrix} =
+    \begin{bmatrix} 
+        ... & \textcolor{purple}{64} \\
+        ... & ... 
+    \end{bmatrix}
+    $$
 
 *   **Position (1,0)** : rangée 1 de A $\cdot$ colonne 0 de B
-    $$ (4 \times 7) + (5 \times 9) + (6 \times 11) = 28 + 45 + 66 = 139 $$
+    $$ \textcolor{red}{( 4 \times 7 )} + \textcolor{green}{( 5 \times 9 )} + \textcolor{blue}{( 6 \times 11 )} = \textcolor{red}{28} + \textcolor{green}{45} + \textcolor{blue}{66} = \textcolor{purple}{139} $$
+
+    $$
+    \begin{bmatrix} 
+    1 & 2 & 3 \\
+    \textcolor{red}{\textbf{4}} & \textcolor{green}{\textbf{5}} & \textcolor{blue}{\textbf{6}}
+    \end{bmatrix} \cdot
+     \begin{bmatrix} 
+    \textcolor{red}{\textbf{7}} & 8 \\
+    \textcolor{green}{\textbf{9}} & 10 \\
+    \textcolor{blue}{\textbf{11}} & 12 
+    \end{bmatrix} =
+    \begin{bmatrix} 
+        ... & ... \\
+        \textcolor{purple}{139} & ... 
+    \end{bmatrix}
+    $$
 
 *   **Position (1,1)** : rangée 1 de A $\cdot$ colonne 1 de B
-    $$ (4 \times 8) + (5 \times 10) + (6 \times 12) = 32 + 50 + 72 = 154 $$
+    $$ \textcolor{red}{( 4 \times 8 )} + \textcolor{green}{( 5 \times 10 )} + \textcolor{blue}{( 6 \times 12 )} = \textcolor{red}{32} + \textcolor{green}{50} + \textcolor{blue}{72} = \textcolor{purple}{154} $$
 
-Résultat final :
+    $$
+    \begin{bmatrix} 
+    1 & 2 & 3 \\
+    \textcolor{red}{\textbf{4}} & \textcolor{green}{\textbf{5}} & \textcolor{blue}{\textbf{6}}
+    \end{bmatrix} \cdot
+     \begin{bmatrix} 
+    7 & \textcolor{red}{\textbf{8}} \\
+    9 & \textcolor{green}{\textbf{10}} \\
+    11 & \textcolor{blue}{\textbf{12}} 
+    \end{bmatrix} =
+    \begin{bmatrix} 
+        ... & ... \\
+        ... & \textcolor{purple}{154} 
+    \end{bmatrix}
+    $$
+
+
+**Résultat final** :
 $$
+\textcolor{purple}{
 C = \begin{bmatrix} 
 58 & 64 \\
 139 & 154 
-\end{bmatrix}
+\end{bmatrix}}
 $$
+
+
+:::danger Attention
+Vous pouvez constater que si l'on intervertit $A$ et $B$, le résultat n'est pas le même.
+$$
+A \cdot B \neq B \cdot A
+$$
+Mathématiquement, on dit que l'opérateur n'est pas commutatif.
+:::
 
 ## Utilisation de `np.dot`
 
@@ -116,7 +181,9 @@ Une erreur fréquente est d'utiliser l'astérisque `*` pour multiplier des matri
 :::tip Astuce
 Pour ne pas avoir d'erreurs, vérifiez toujours les dimensions (shapes) :
 
-> $(m, n) \cdot (n, p) \rightarrow (m, p)$
+$$
+(m, \textcolor{Brown}{n}) \cdot (\textcolor{Brown}{n}, p) \rightarrow (m, p)
+$$
 
-Les dimensions "intérieures" ($n$) doivent correspondre.
+Les dimensions "intérieures" (ici $\textcolor{Brown}{n}$) doivent correspondre.
 :::
