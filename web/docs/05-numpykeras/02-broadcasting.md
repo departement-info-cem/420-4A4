@@ -2,7 +2,7 @@
 
 Le **Broadcasting** est une fonctionnalité puissante de NumPy qui permet d'effectuer des opérations arithmétiques ($+$, $-$, $\times$, ...) sur des tableaux de dimensions différentes.
 
-Sans broadcasting, pour additionner deux tableaux, ils doivent avoir exactement les mêmes dimensions. Le broadcasting relâche cette contrainte en "étirant" implicitement le tableau le plus petit pour qu'il corresponde à la taille du plus grand.
+Sans broadcasting, pour additionner deux tableaux, ils doivent avoir exactement les mêmes dimensions. Le broadcasting relâche cette contrainte en "étirant" implicitement les tableaux pour que leur ``shape`` correspondent.
 
 ## Exemple simple : scalaire + vecteur
 
@@ -27,8 +27,11 @@ NumPy "imagine" que le `4` est en fait un vecteur `[4, 4, 4]` de même taille qu
 Pour que deux `ndarray` soient compatibles pour le broadcasting, NumPy compare leurs dimensions **en partant de la droite** (de la dernière dimension vers la première).
 
 Deux dimensions sont compatibles si :
-1.  Elles sont **égales**, OU
-2.  L'une d'elles vaut **1**.
+> 1.  Elles sont **égales**
+>
+>                    **OU**
+>
+> 2.  L'une d'elles vaut **1**.
 
 Si des dimensions de gauche (les premières) manquent à l'un des deux `ndarray`, **elles seront rajoutées et le broadcasting aura lieu sur celles-ci**.
 
@@ -36,11 +39,11 @@ Si ces conditions ne sont pas remplies, vous obtiendrez une erreur `ValueError: 
 
 Voici quelques exemples pour illustrer les différents cas d'application de ces règles 🕵️:
 
-* `ndarray` de 'shape': $(2,4)$ compatible avec $(1,4)$, le résultat sera $(2,4)$
-* `ndarray` de 'shape': $(2,4)$ compatible avec $(4)$, le résultat sera $(2,4)$
-* `ndarray` de 'shape': $(2,4)$ non compatible avec $(2)$ (le broadcasting ne rajoute pas de dimension à droite)
-* `ndarray` de 'shape': $(2,4)$ compatible avec $(2,1)$, le résultat sera $(2,4)$
-* `ndarray` de 'shape': $(2,4,6,1)$ compatible avec $(4,1,8)$, le résultat sera $(2,4,6,8)$
+* `ndarray` de 'shape': $(\textcolor{red}{2},\textcolor{green}{4})$ compatible avec $(\textcolor{red}{1},\textcolor{green}{4})$, le résultat sera $(\textcolor{red}{2},\textcolor{green}{4})$
+* `ndarray` de 'shape': $(\textcolor{red}{2},\textcolor{green}{4})$ compatible avec $(\textcolor{green}{4})$, le résultat sera $(\textcolor{red}{2},\textcolor{green}{4})$
+* `ndarray` de 'shape': $(2,\textcolor{green}{4})$ non compatible avec $(\textcolor{green}{2})$ (le broadcasting ne rajoute pas de dimension à droite)
+* `ndarray` de 'shape': $(\textcolor{red}{2},\textcolor{green}{4})$ compatible avec $(\textcolor{red}{2},\textcolor{green}{1})$, le résultat sera $(\textcolor{red}{2},\textcolor{green}{4})$
+* `ndarray` de 'shape': $(\textcolor{red}{2},\textcolor{green}{4},\textcolor{blue}{6},\textcolor{brown}{1})$ compatible avec $(\textcolor{green}{4},\textcolor{blue}{1},\textcolor{brown}{8})$, le résultat sera $(\textcolor{red}{2},\textcolor{green}{4},\textcolor{blue}{6},\textcolor{brown}{8})$
 
 ## Exemple : Vecteur + Matrice
 
