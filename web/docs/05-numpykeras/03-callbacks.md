@@ -4,21 +4,23 @@ Dans nos scripts d'entraînement, on va utiliser **trois callbacks Keras**.
 
 Un callback permet d'exécuter une action (ici sauvegarder des données) à différents moments de l'apprentissage (ici à intervalle régulier).
 
-## 1. Dossiers d'une expérience 📁
+## Dossiers d'une expérience 📁
 
 Pour chaque expérience, on va créer les dossiers suivants:
 
 ```python
-dossier_experience = "drive/MyDrive/4A4/Experiences/Lab1/" + str(id_experience)
-dossier_sauvegarde = dossier_experience + "/sauvegarde"
-os.makedirs(dossier_experience, exist_ok=True)
+tache = "Laboratoire1"
+
+id_experience = 1
+dossier_experience = f"drive/MyDrive/4A4/Experiences/{tache}/{id_experience}"
+dossier_sauvegarde = f"{dossier_experience}/sauvegarde"
 os.makedirs(dossier_sauvegarde, exist_ok=True)
 ```
 
 ---
 
-## 2. `BackupAndRestore` : sauvegarde et reprise automatique 💾
-
+## 1. `BackupAndRestore` : sauvegarde et reprise automatique 💾 
+[🔗Documentation](https://keras.io/api/callbacks/backup_and_restore/)
 ```python
 callback_sauvegarde = keras.callbacks.BackupAndRestore(
     backup_dir=dossier_sauvegarde,
@@ -36,22 +38,21 @@ Utilité :
 
 ---
 
-## 3. `ModelCheckpoint` : garder le « meilleur » modèle 🏆
-
+## 2. `ModelCheckpoint` : garder le « meilleur » modèle 🏆
+[🔗Documentation](https://keras.io/api/callbacks/model_checkpoint/)
 ```python
-fichier_sauvegarde = dossier_experience + "/meilleur.model.keras"
+fichier_sauvegarde = dossier_experience + "/modele_epoch_{epoch:02d}_val_acc_{val_accuracy:.4f}.keras"
 callback_meilleur = keras.callbacks.ModelCheckpoint(
     filepath=fichier_sauvegarde,
     monitor="val_accuracy",
     mode="max",
-    save_freq=1000,
     save_best_only=True)
 ```
+À chaque epoch, Keras sauvegarde le modèle s'il obtient une meilleure valeur pour la métrique spécifiée.
 
-- `filepath` : chemin du fichier où sera enregistré le **meilleur modèle**.
+- `filepath` : chemin du fichier où sera enregistré le **meilleur modèle**, on s'assure de sauvegarder l'epoch et la métrique surveillée dans le nom de fichier, car si on relance l'expérience le meilleur score est réinitialisé.
 - `monitor="val_accuracy"` : métrique surveillée (ici, **l'exactitude sur le jeu de validation**).
 - `mode="max"` : plus la valeur de `val_accuracy` est **grande**, mieux c'est.
-- `save_freq=1000` : vérifie/sauvegarde toutes les 1000 itérations (batches).
 - `save_best_only=True` : n'écrit le fichier que si le modèle actuel est **meilleur** que le précédent.
 
 Utilité :
@@ -65,8 +66,8 @@ meilleur_model = keras.models.load_model(fichier_sauvegarde)
 
 ---
 
-## 4. `CSVLogger` : journal d'entraînement dans un fichier CSV 📈
-
+## 3. `CSVLogger` : journal d'entraînement dans un fichier CSV 📈
+[🔗Documentation](https://keras.io/api/callbacks/csv_logger/)
 ```python
 fichier_log = dossier_experience + "/log.csv"
 callback_log = keras.callbacks.CSVLogger(fichier_log, append=True)
@@ -99,7 +100,7 @@ plt.show()
 
 ---
 
-## 5. Utiliser les callbacks
+## Utiliser les callbacks
 
 Il suffit de passer les callbacks sous forme de liste à `model.fit(...)`, par exemple :
 
@@ -134,7 +135,7 @@ drive/
 └── MyDrive/
     └── 4A4/
         └── Experiences/
-            └── Laboratoire1/
+            └── <tache>/
                 └── <id_experience>/
                     ├── meilleur.model.keras    # meilleur modèle sauvegardé (ModelCheckpoint)
                     ├── log.csv                 # journal d'entraînement (CSVLogger)
