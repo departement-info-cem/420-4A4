@@ -78,7 +78,7 @@ const sidebars = {
     },
     {
       type: "doc",
-      label: "4.1 - Examen Quiz  - Keras",
+      label: "4.1 - Examen Quiz - Keras",
       id: "cours/rencontre4.1",
       customProps: {
         calendrier: {
