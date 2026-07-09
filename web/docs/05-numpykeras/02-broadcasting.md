@@ -39,11 +39,11 @@ Si ces conditions ne sont pas remplies, vous obtiendrez une erreur `ValueError: 
 
 Voici quelques exemples pour illustrer les différents cas d'application de ces règles 🕵️:
 
-* `ndarray` de 'shape': $(\textcolor{red}{2},\textcolor{green}{4})$ compatible avec $(\textcolor{red}{1},\textcolor{green}{4})$, le résultat sera $(\textcolor{red}{2},\textcolor{green}{4})$
-* `ndarray` de 'shape': $(\textcolor{red}{2},\textcolor{green}{4})$ compatible avec $(\textcolor{green}{4})$, le résultat sera $(\textcolor{red}{2},\textcolor{green}{4})$
-* `ndarray` de 'shape': $(2,\textcolor{green}{4})$ non compatible avec $(\textcolor{green}{2})$ (le broadcasting ne rajoute pas de dimension à droite)
-* `ndarray` de 'shape': $(\textcolor{red}{2},\textcolor{green}{4})$ compatible avec $(\textcolor{red}{2},\textcolor{green}{1})$, le résultat sera $(\textcolor{red}{2},\textcolor{green}{4})$
-* `ndarray` de 'shape': $(\textcolor{red}{2},\textcolor{green}{4},\textcolor{blue}{6},\textcolor{brown}{1})$ compatible avec $(\textcolor{green}{4},\textcolor{blue}{1},\textcolor{brown}{8})$, le résultat sera $(\textcolor{red}{2},\textcolor{green}{4},\textcolor{blue}{6},\textcolor{brown}{8})$
+* `ndarray` de 'shape': $(\textcolor{FireBrick}{2},\textcolor{Green}{4})$ compatible avec $(\textcolor{FireBrick}{1},\textcolor{Green}{4})$, le résultat sera $(\textcolor{FireBrick}{2},\textcolor{Green}{4})$
+* `ndarray` de 'shape': $(\textcolor{FireBrick}{2},\textcolor{Green}{4})$ compatible avec $(\textcolor{Green}{4})$, le résultat sera $(\textcolor{FireBrick}{2},\textcolor{Green}{4})$
+* `ndarray` de 'shape': $(2,\textcolor{Green}{4})$ non compatible avec $(\textcolor{Green}{2})$ (le broadcasting ne rajoute pas de dimension à droite)
+* `ndarray` de 'shape': $(\textcolor{FireBrick}{2},\textcolor{Green}{4})$ compatible avec $(\textcolor{FireBrick}{2},\textcolor{Green}{1})$, le résultat sera $(\textcolor{FireBrick}{2},\textcolor{Green}{4})$
+* `ndarray` de 'shape': $(\textcolor{FireBrick}{2},\textcolor{Green}{4},\textcolor{RoyalBlue}{6},\textcolor{Orchid}{1})$ compatible avec $(\textcolor{Green}{4},\textcolor{RoyalBlue}{1},\textcolor{Orchid}{8})$, le résultat sera $(\textcolor{FireBrick}{2},\textcolor{Green}{4},\textcolor{RoyalBlue}{6},\textcolor{Orchid}{8})$
 
 ## Exemple : Vecteur + Matrice
 
@@ -68,8 +68,8 @@ notes_finales = notes + bonus
 
 ### Analyse des dimensions
 
-*   `notes` : $(3,\textcolor{red}{4})$
-*   `bonus` : $(\textcolor{red}{4})$
+*   `notes` : $(3,\textcolor{FireBrick}{4})$
+*   `bonus` : $(\textcolor{FireBrick}{4})$
 
 Les dernières dimensions (4 et 4) correspondent. NumPy va "broadcaster" le vecteur `bonus` sur chaque rangée de la matrice `notes`.
 

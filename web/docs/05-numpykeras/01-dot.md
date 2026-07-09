@@ -45,89 +45,89 @@ $$
 Calculons le résultat :
 
 *   **Position (0,0)** : rangée 0 de A $\cdot$ colonne 0 de B
-    $$ \textcolor{red}{( 1 \times 7 )} + \textcolor{green}{( 2 \times 9 )} + \textcolor{blue}{( 3 \times 11 )} = \textcolor{red}{7} + \textcolor{green}{18} + \textcolor{blue}{33} = \textcolor{purple}{58} $$
+    $$ \textcolor{FireBrick}{( 1 \times 7 )} + \textcolor{Green}{( 2 \times 9 )} + \textcolor{RoyalBlue}{( 3 \times 11 )} = \textcolor{FireBrick}{7} + \textcolor{Green}{18} + \textcolor{RoyalBlue}{33} = \textcolor{Orchid}{58} $$
 
     $$
     \begin{bmatrix} 
-    \textcolor{red}{\textbf{1}} & \textcolor{green}{\textbf{2}} & \textcolor{blue}{\textbf{3}} \\
+    \textcolor{FireBrick}{\textbf{1}} & \textcolor{Green}{\textbf{2}} & \textcolor{RoyalBlue}{\textbf{3}} \\
     4 & 5 & 6
     \end{bmatrix} \cdot
      \begin{bmatrix} 
-    \textcolor{red}{\textbf{7}} & 8 \\
-    \textcolor{green}{\textbf{9}} & 10 \\
-    \textcolor{blue}{\textbf{11}} & 12 
+    \textcolor{FireBrick}{\textbf{7}} & 8 \\
+    \textcolor{Green}{\textbf{9}} & 10 \\
+    \textcolor{RoyalBlue}{\textbf{11}} & 12 
     \end{bmatrix} =
     \begin{bmatrix} 
-        \textcolor{purple}{58} & ... \\
+        \textcolor{Orchid}{58} & ... \\
         ... & ... 
     \end{bmatrix}
     $$
 
 *   **Position (0,1)** : rangée 0 de A $\cdot$ colonne 1 de B
-    $$ \textcolor{red}{( 1 \times 8 )} + \textcolor{green}{( 2 \times 10 )} + \textcolor{blue}{( 3 \times 12 )} = \textcolor{red}{8} + \textcolor{green}{20} + \textcolor{blue}{36} = \textcolor{purple}{64} $$
+    $$ \textcolor{FireBrick}{( 1 \times 8 )} + \textcolor{Green}{( 2 \times 10 )} + \textcolor{RoyalBlue}{( 3 \times 12 )} = \textcolor{FireBrick}{8} + \textcolor{Green}{20} + \textcolor{RoyalBlue}{36} = \textcolor{Orchid}{64} $$
 
     $$
     \begin{bmatrix} 
-    \textcolor{red}{\textbf{1}} & \textcolor{green}{\textbf{2}} & \textcolor{blue}{\textbf{3}} \\
+    \textcolor{FireBrick}{\textbf{1}} & \textcolor{Green}{\textbf{2}} & \textcolor{RoyalBlue}{\textbf{3}} \\
     4 & 5 & 6
     \end{bmatrix} \cdot
      \begin{bmatrix} 
-    7 & \textcolor{red}{\textbf{8}} \\
-    9 &\textcolor{green}{\textbf{10}} \\
-    11 & \textcolor{blue}{\textbf{12}} 
+    7 & \textcolor{FireBrick}{\textbf{8}} \\
+    9 &\textcolor{Green}{\textbf{10}} \\
+    11 & \textcolor{RoyalBlue}{\textbf{12}} 
     \end{bmatrix} =
     \begin{bmatrix} 
-        ... & \textcolor{purple}{64} \\
+        ... & \textcolor{Orchid}{64} \\
         ... & ... 
     \end{bmatrix}
     $$
 
 *   **Position (1,0)** : rangée 1 de A $\cdot$ colonne 0 de B
-    $$ \textcolor{red}{( 4 \times 7 )} + \textcolor{green}{( 5 \times 9 )} + \textcolor{blue}{( 6 \times 11 )} = \textcolor{red}{28} + \textcolor{green}{45} + \textcolor{blue}{66} = \textcolor{purple}{139} $$
+    $$ \textcolor{FireBrick}{( 4 \times 7 )} + \textcolor{Green}{( 5 \times 9 )} + \textcolor{RoyalBlue}{( 6 \times 11 )} = \textcolor{FireBrick}{28} + \textcolor{Green}{45} + \textcolor{RoyalBlue}{66} = \textcolor{Orchid}{139} $$
 
     $$
     \begin{bmatrix} 
     1 & 2 & 3 \\
-    \textcolor{red}{\textbf{4}} & \textcolor{green}{\textbf{5}} & \textcolor{blue}{\textbf{6}}
+    \textcolor{FireBrick}{\textbf{4}} & \textcolor{Green}{\textbf{5}} & \textcolor{RoyalBlue}{\textbf{6}}
     \end{bmatrix} \cdot
      \begin{bmatrix} 
-    \textcolor{red}{\textbf{7}} & 8 \\
-    \textcolor{green}{\textbf{9}} & 10 \\
-    \textcolor{blue}{\textbf{11}} & 12 
+    \textcolor{FireBrick}{\textbf{7}} & 8 \\
+    \textcolor{Green}{\textbf{9}} & 10 \\
+    \textcolor{RoyalBlue}{\textbf{11}} & 12 
     \end{bmatrix} =
     \begin{bmatrix} 
         ... & ... \\
-        \textcolor{purple}{139} & ... 
+        \textcolor{Orchid}{139} & ... 
     \end{bmatrix}
     $$
 
 *   **Position (1,1)** : rangée 1 de A $\cdot$ colonne 1 de B
-    $$ \textcolor{red}{( 4 \times 8 )} + \textcolor{green}{( 5 \times 10 )} + \textcolor{blue}{( 6 \times 12 )} = \textcolor{red}{32} + \textcolor{green}{50} + \textcolor{blue}{72} = \textcolor{purple}{154} $$
+    $$ \textcolor{FireBrick}{( 4 \times 8 )} + \textcolor{Green}{( 5 \times 10 )} + \textcolor{RoyalBlue}{( 6 \times 12 )} = \textcolor{FireBrick}{32} + \textcolor{Green}{50} + \textcolor{RoyalBlue}{72} = \textcolor{Orchid}{154} $$
 
     $$
     \begin{bmatrix} 
     1 & 2 & 3 \\
-    \textcolor{red}{\textbf{4}} & \textcolor{green}{\textbf{5}} & \textcolor{blue}{\textbf{6}}
+    \textcolor{FireBrick}{\textbf{4}} & \textcolor{Green}{\textbf{5}} & \textcolor{RoyalBlue}{\textbf{6}}
     \end{bmatrix} \cdot
      \begin{bmatrix} 
-    7 & \textcolor{red}{\textbf{8}} \\
-    9 & \textcolor{green}{\textbf{10}} \\
-    11 & \textcolor{blue}{\textbf{12}} 
+    7 & \textcolor{FireBrick}{\textbf{8}} \\
+    9 & \textcolor{Green}{\textbf{10}} \\
+    11 & \textcolor{RoyalBlue}{\textbf{12}} 
     \end{bmatrix} =
     \begin{bmatrix} 
         ... & ... \\
-        ... & \textcolor{purple}{154} 
+        ... & \textcolor{Orchid}{154} 
     \end{bmatrix}
     $$
 
 
 **Résultat final** :
 $$
-\textcolor{purple}{
+
 C = \begin{bmatrix} 
-58 & 64 \\
-139 & 154 
-\end{bmatrix}}
+\textcolor{Orchid}{58} & \textcolor{Orchid}{64} \\
+\textcolor{Orchid}{139} & \textcolor{Orchid}{154} 
+\end{bmatrix}
 $$
 
 
@@ -182,8 +182,8 @@ Une erreur fréquente est d'utiliser l'astérisque `*` pour multiplier des matri
 Pour ne pas avoir d'erreurs, vérifiez toujours les dimensions (shapes) :
 
 $$
-(m, \textcolor{Brown}{n}) \cdot (\textcolor{Brown}{n}, p) \rightarrow (m, p)
+(m, \textcolor{Orchid}{n}) \cdot (\textcolor{Orchid}{n}, p) \rightarrow (m, p)
 $$
 
-Les dimensions "intérieures" (ici $\textcolor{Brown}{n}$) doivent correspondre.
+Les dimensions "intérieures" (ici $\textcolor{Orchid}{n}$) doivent correspondre.
 :::
