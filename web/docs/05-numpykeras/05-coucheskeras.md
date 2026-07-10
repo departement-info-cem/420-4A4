@@ -1,4 +1,4 @@
-# 🍰 Couches Keras
+# 🍰 Couches (Keras)
 
 Voici les **Layers** Keras que nous allons le plus utiliser dans le cours.
 
