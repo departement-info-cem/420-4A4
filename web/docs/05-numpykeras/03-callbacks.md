@@ -41,19 +41,21 @@ Utilité :
 ## 2. `ModelCheckpoint` : garder le « meilleur » modèle 🏆
 [🔗Documentation](https://keras.io/api/callbacks/model_checkpoint/)
 ```python
-fichier_sauvegarde = dossier_experience + "/modele_epoch_{epoch:02d}_val_acc_{val_accuracy:.4f}.keras"
+fichier_sauvegarde = dossier_experience + "/meilleur.model.keras"
 callback_meilleur = keras.callbacks.ModelCheckpoint(
     filepath=fichier_sauvegarde,
     monitor="val_accuracy",
     mode="max",
-    save_best_only=True)
+    save_best_only=True,
+    initial_value_threshold=ancienne_meilleure_valeur)
 ```
 À chaque epoch, Keras sauvegarde le modèle s'il obtient une meilleure valeur pour la métrique spécifiée.
 
-- `filepath` : chemin du fichier où sera enregistré le **meilleur modèle**, on s'assure de sauvegarder l'epoch et la métrique surveillée dans le nom de fichier, car si on relance l'expérience le meilleur score est réinitialisé.
+- `filepath` : chemin du fichier où sera enregistré le **meilleur modèle**.
 - `monitor="val_accuracy"` : métrique surveillée (ici, **l'exactitude sur le jeu de validation**).
 - `mode="max"` : plus la valeur de `val_accuracy` est **grande**, mieux c'est.
 - `save_best_only=True` : n'écrit le fichier que si le modèle actuel est **meilleur** que le précédent.
+- `initial_value_threshold`: à chaque fois que l'on relance l'expérience, la meilleure valeur est rénitialisée, il faut donc lire dans les fichiers de log (voir ci-dessous) quelle était la meilleure valeur précédente pour ne sauvegarder un nouveau modèle que lorsque l'on a une amélioration.
 
 Utilité :
 - À la fin de l'entraînement, tu peux recharger **le meilleur modèle obtenu** (meilleure `val_accuracy`), et pas simplement le dernier état.
@@ -96,6 +98,16 @@ plt.plot(df["loss"], label="loss")
 plt.plot(df["val_accuracy"], label="val_accuracy")
 plt.legend()
 plt.show()
+```
+
+Ou pour obtenir la meilleure valeur de la métrique surveillée :
+
+```python
+import pandas as pd
+import matplotlib.pyplot as plt
+
+df = pd.read_csv(fichier_log)
+ancienne_meilleure_valeur = df["val_accuracy"].max()
 ```
 
 ---
@@ -146,7 +158,7 @@ drive/
 
 - `<id_experience>` : identifiant unique de l'expérience (ex: hyper-paramètres, type de modèle ...).
 - `sauvegarde/` : contient les fichiers nécessaires pour reprendre un entraînement interrompu.
-- `meilleur.model.keras` : modèle à recharger pour l'évaluation ou la suite des expériences.
+- `meilleur.model.keras` : modèle à recharger pour l'évaluation.
 - `log.csv` : fichier à charger pour tracer les courbes d'apprentissage.
 
 :::
