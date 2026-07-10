@@ -13,7 +13,7 @@ Pour accéder à *Colab Enterprise* :
 Avant de connecter un GPU, vous devez démarrer un environnement d'exécution :
 
 1. Dans le menu de gauche de **Colab Enterprise**, cliquez sur **Environnements d'exécution**.
-2. Assurez-vous de bien sélectionner la région : `us-west1 (Oregon)`.
+2. Assurez-vous de bien sélectionner la région désirée, par exemple : `us-west1 (Oregon)` (la liste complete est [ici](regionscloud)).
 3. Cliquez sur **+ Créer** en haut de la page.
 4. Dans la fenêtre de dialogue à droite, sélectionnez votre modèle d'exécution (voir [la création de compte](/googlecloud/comptecreation#5-cr%C3%A9er-un-mod%C3%A8le-dex%C3%A9cution-gpu-%EF%B8%8F)), puis cliquez sur **Créer**.
 5. Vous verrez que l'instance va se lancer, il faut attendre qu'elle soit opérationnelle (cela peut prendre quelques minutes).
@@ -23,7 +23,7 @@ Avant de connecter un GPU, vous devez démarrer un environnement d'exécution :
 ## 2. Ouvrir un notebook 📓
 
 1. Dans le menu de gauche de **Colab Enterprise**, cliquez sur **Mes Notebooks**.
-2. Assurez-vous de bien sélectionner la région : `us-west1 (Oregon)`.
+2. Assurez-vous de bien sélectionner la région désirée, par exemple : `us-west1 (Oregon)` (la liste complete est [ici](regionscloud)).
 3. Vous pouvez ici importer des notebooks, en ouvrir un existant ou en créer un nouveau.
 4. Cliquez sur le notebook à ouvrir. S'il n'est pas en cours d'exécution, cliquez sur la petite flèche à côté de **Connecter** en haut à droite.
 5. Cliquez sur **Connexion à un environnement d'exécution**, choisissez l'instance en cours d'exécution et cliquez sur **Connecter**.
