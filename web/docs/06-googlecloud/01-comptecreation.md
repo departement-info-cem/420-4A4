@@ -49,7 +49,7 @@ Avant tout, il est important de vous assurer que vous êtes déconnecté de votr
 1. Cliquez sur les 3 lignes horizontales à gauche du logo Google Cloud, placez le pointeur sur **Vertex AI**, cliquez sur **Colab Enterprise**.
 2. Cliquez sur **Modèles d'exécution**.
 3. En haut, au milieu, cliquez sur **+ Nouveau modèle**.
-4. Donnez-lui un nom (ex. : "GPU"), sélectionnez la région `us-west1 (Oregon)`, puis cliquez sur **Continuer**.
+4. Donnez-lui un nom (ex. : "GPU"), sélectionnez la région désirée, par exemple: `us-west1 (Oregon)` (la liste complete est [ici]((/googlecloud/regionscloud))), puis cliquez sur **Continuer**.
 5. Sélectionnez la machine : `g2-standard-4`, ne touchez pas au reste.
 6. Cliquez sur **Créer** en bas de la page.
 

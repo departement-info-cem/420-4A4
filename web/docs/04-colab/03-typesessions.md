@@ -19,9 +19,13 @@ Dans [Google Colab](https://colab.research.google.com/)![colab](../../static/img
    - **Accélérateur matériel** : choisis **Processeur**.
 5. Clique sur **Enregistrer**.
 
-Ta session utilise maintenant une machine cloud avec **CPU uniquement**, ce n'est pas très rapide mais 
+Ta session utilise maintenant une machine avec **CPU uniquement**, ce n'est pas très rapide mais 
 ça te permet de travailler même si tu n'as plus de quotas pour des machines avec accélérateur. Les sessions
 CPU sont aussi sujet à quotas mais ces derniers sont très permissifs.
+
+:::tip
+Quand tu développes du code c'est une bonne chose de se mettre en instance CPU. Ne passe en GPU que lorsque ton code marche et que tu veux réellement exécuter des expériences. Cela te permettra d'économiser ton quota.
+:::
 
 ---
 
@@ -51,7 +55,7 @@ if torch.cuda.is_available():
 
 ### 2.3. Précautions avec les sessions GPU
 
-:::warning
+:::danger
 - Vous ne pouvez avoir qu'une seule session GPU d'ouverte.
 - Le temps de session GPU est **limité** (quotas Google), vous pourriez ne plus avoir accès aux accélérateurs sans pré-avis.
 - En cas d’inactivité, la session peut être **coupée**.
@@ -78,7 +82,7 @@ Inconvénients :
 ### 3.1. Pré-requis (déjà fait pour les machines des laboratoires)
 
 1. Installe **Python** et **pip** sur ta machine.
-2. Installe/configure toutes les librairies utilisées dans les laboratoires 😱
+2. Installe/configure toutes les librairies utilisées dans les laboratoires 😱 (pas de support pour cette partie, désolé)
 3. Installe **Jupyter** :
    ```bash
    pip install jupyter
@@ -97,7 +101,7 @@ Inconvénients :
 Une fois connecté, l’exécution des cellules se fera **sur ta machine**, mais l’interface restera celle de Google Colab.
 
 :::info
-Pour pouvoir rouler le code des travaux sur ton ordinateur personnel, il faudra installer toutes les librairies nécessaires (**Numpy**, **Keras**, **PyTorch** ...). Il faudra aussi configurer ton GPU, si tu en as un, pour qu'il soit utilisable.
+Pour pouvoir rouler le code des travaux sur ton ordinateur personnel, il faudra installer toutes les librairies nécessaires (**Numpy**, **Keras**, **TensorFlow** ...). Il faudra aussi configurer ton GPU, si tu en as un, pour qu'il soit utilisable.
 
 Les machines des laboratoires peuvent être plus rapides que les sessions CPU hébergées, par contre tu ne pourras pas monter le Google Drive de la façon que nous avons vu, tu devras donc sauvegarder tes fichiers manuellement. 
 :::

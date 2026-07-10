@@ -25,7 +25,7 @@ print(f"Dossier courant : {dossier_courant}")
 
 ```python
 contenu = os.listdir("dossier_parent/dossier_à_lister")
-print("Contenu du dossier dossier_parent/dossier_à_lister:", contenu)
+print(f"Contenu du dossier dossier_parent/dossier_à_lister: {contenu}")
 
 ```
 

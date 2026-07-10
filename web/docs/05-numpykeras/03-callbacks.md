@@ -30,7 +30,7 @@ callback_sauvegarde = keras.callbacks.BackupAndRestore(
 ```
 
 - `backup_dir` : dossier où seront stockées les sauvegardes de l'entraînement.
-- `save_freq=1000` : une sauvegarde est faite **toutes les 1000 batches**.
+- `save_freq=1000` : une sauvegarde est faite **toutes les 1000 batchs**.
 - `double_checkpoint=True` : double la sauvegarde pour prévenir les risques de fichiers corrompus.
 
 Utilité :
