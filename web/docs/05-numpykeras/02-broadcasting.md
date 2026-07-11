@@ -47,70 +47,74 @@ Voici quelques exemples pour illustrer les différents cas d'application de ces 
 
 ## Exemple : Vecteur + Matrice
 
-Supposons que nous ayons une matrice de notes (3 étudiants, 4 examens) et que nous voulions ajouter des points bonus différents pour chaque examen.
+Supposons que nous ayons une matrice de notes (2 étudiants, 3 examens): 
 
 ```python
 import numpy as np
 
-# Matrice 3x4 (3 étudiants, 4 examens)
-notes = np.array([
-    [70, 80, 85, 90],
-    [60, 75, 80, 85],
-    [90, 95, 90, 99]
-])
+# Matrice 2x3 (2 étudiants, 3 examens)
+notes = np.array([[70, 80, 85],
+                  [60, 75, 80]])
+```
 
-# Bonus pour les 4 examens (taille 4)
-bonus = np.array([2, 5, 0, 1])
+Nous voulons ajouter des points bonus différents **pour chaque examen**.
+
+```python
+# Bonus pour les 3 examens (taille 3)
+bonus_examen = np.array([2, 5, 0])
 
 # Addition grâce au broadcasting
-notes_finales = notes + bonus
+notes_finales = notes + bonus_examen
 ```
 
 ### Analyse des dimensions
 
-*   `notes` : $(3,\textcolor{FireBrick}{4})$
-*   `bonus` : $(\textcolor{FireBrick}{4})$
+*   `notes` : $(2,\textcolor{FireBrick}{3})$
+*   `bonus` : $(\textcolor{FireBrick}{3})$
 
-Les dernières dimensions (4 et 4) correspondent. NumPy va "broadcaster" le vecteur `bonus` sur chaque rangée de la matrice `notes`.
+Les dernières dimensions (3 et 3) correspondent. NumPy va "broadcaster" le vecteur `bonus_examen` sur chaque rangée de la matrice `notes`.
 
 Résultat :
 ```text
-[[72  85  85  91 ]   <-- [70+2, 80+5, 85+0, 90+1]
- [62  80  80  86 ]   <-- [60+2, 75+5, 80+0, 85+1]
- [92  100 90  100]]  <-- [90+2, 95+5, 90+0, 99+1]
+             n1  n2  n3            n1    n2    n3
+Étudiant 1 [[72  85  85],   <-- [[70+2, 80+5, 85+0],
+Étudiant 2  [62  80  80]]   <--  [60+2, 75+5, 80+0]]
 ```
 
 :::warning Attention
 ## Attention à l'ordre des dimensions (utilité de `reshape`)
 
-Si on veut ajouter un bonus individuel à chaque étudiant (donc par rangée), il faut faire attention à l'ordre des dimensions.
+Si on veut ajouter un bonus **pour chaque étudiant** (donc par rangée), il faut faire ici attention à l'ordre des dimensions.
 
 ```python
 import numpy as np
 
-notes = np.array([[70, 80], [60, 75]]) # (2, 2)
-bonus_etudiant = np.array([5, 10])     # (2,)
+notes = np.array([[70, 80],
+                  [60, 75]])       # (2, 2)
 
-# Résultat non correct car (2,) s'aligne sur la dernière dimension donc sur les examens au lieu des étudiants
-# notes + bonus_etudiant 
-# array([[75, 90],
-#        [65, 85]])
+# Bonus pour les 2 étudiants
+bonus_etudiant = np.array([5, 10]) # (2,)
+
+resultat_incorrect = notes + bonus_etudiant
+# Résultat non correct car (2,) s'aligne sur la dernière dimension donc sur les examens au lieu des étudiants 
+# [[75, 90], <-- +[5, 10]
+#  [65, 85]] <-- +[5, 10]
 ```
 
-Pour que le "broadcasting" s'applique sur les rangées, il faut transformer le vecteur 1D en colonne (2, 1).
+Pour que le "broadcasting" s'applique sur les rangées, il faut transformer le vecteur 1D en vecteur colonne (2, 1). On peut faire cela grâce à la méthode **`reshape`** de NumPy.
 
 ```python
 import numpy as np
 
 bonus_colonne = bonus_etudiant.reshape(2, 1) # Forme (2, 1)
 
-# notes : (2, 2)
-# bonus : (2, 1)
-#          ^  ^
-#          |  compatible (2 vs 1)
-#          compatible (2 vs 2)
+# notes         : (2, 2)
+# bonus_colonne : (2, 1)
+#                  ^  ^
+#                  |  compatible (2 vs 1)
+#                  compatible (2 vs 2)
 
-resultat = notes + bonus_colonne
+resultat_correct = notes + bonus_colonne
 # [[75, 85],  <-- +5 partout
 #  [70, 85]]  <-- +10 partout
 ```

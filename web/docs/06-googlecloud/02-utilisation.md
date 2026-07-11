@@ -1,5 +1,18 @@
 # 🛠️ Utiliser Colab Enterprise
 
+:::danger
+Un environnement d'exécution en fonctionnement consomme du crédit sur vos 50 $. 
+
+**Utilisez une session Colab classique pour développer votre code, ne passez sur Google Cloud que lorsque vous voulez lancer des expériences, cela vous sauvera beaucoup de crédit.**
+
+Assurez-vous de toujours supprimer vos environnements d'exécution quand vous ne vous en servez plus :
+
+1. Dans le menu de gauche de **Colab Enterprise**, cliquez sur **Environnements d'exécution**.
+2. Cochez la case de l'environnement d'exécution à arrêter et cliquez sur **Supprimer** en haut.
+:::
+
+---
+
 Pour accéder à *Colab Enterprise* :
 
 1. Allez sur [Google Cloud](https://cloud.google.com/).
@@ -7,6 +20,7 @@ Pour accéder à *Colab Enterprise* :
 3. Cliquez sur le rectangle à côté du logo Google Cloud et sélectionnez votre projet.
 4. Cliquez sur les 3 lignes horizontales à gauche du logo Google Cloud, placez le pointeur sur **Vertex AI**, cliquez sur **Colab Enterprise**.
 
+---
 
 ## 1. Lancer l'environnement d'exécution 🚀
 
@@ -30,7 +44,7 @@ Avant de connecter un GPU, vous devez démarrer un environnement d'exécution :
 
 ---
 
-Vous avez maintenant une interface similaire à ce que vous utilisez dans Google Colab. Il y a cependant **quelques différences** :
+Vous avez maintenant une interface similaire à ce que vous utilisez dans Google Colab. Il y a cependant **une différence importante** :
 
 
 :::tip
@@ -47,16 +61,9 @@ local_path = f"/content/drive"
 # Voici la commande qui monte le bucket Cloud Storage
 !gcsfuse --implicit-dirs {mount_path} {local_path}
 ```
-:::
-
-
-:::danger
-Un environnement d'exécution en fonctionnement consomme du crédit sur vos 50 $. 
-Assurez-vous de toujours supprimer vos environnements d'exécution quand vous ne vous en servez plus :
-
-1. Dans le menu de gauche de **Colab Enterprise**, cliquez sur **Environnements d'exécution**.
-2. Cochez la case de l'environnement d'exécution à arrêter et cliquez sur **Supprimer** en haut.
 
 Par défaut, l'environnement d'exécution fonctionne pendant 17 heures. Assurez-vous de bien sauvegarder vos données dans le dossier 
 où le *bucket Cloud Storage* est monté.
 :::
+
+
