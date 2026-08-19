@@ -1,6 +1,6 @@
 ---
 title: Rencontre 7.1
-description: Examen intra formatif
+description: TP 1
 ---
 
-# Examen intra formatif
+# TP1

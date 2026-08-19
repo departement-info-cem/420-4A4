@@ -1,6 +1,6 @@
 ---
 title: Rencontre 12.2
-description: Transformers ou Diffusion
+description: Transformers
 ---
 
-# Transformers, diffusion
+# Transformers

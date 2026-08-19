@@ -1,6 +1,6 @@
 ---
 title: Rencontre 11.1
-description: Données textuelles ou Prédictions denses
+description: Données textuelles
 ---
 
-# Série temporelle, language, prédictions dense, segmentation
+# Série temporelle, language

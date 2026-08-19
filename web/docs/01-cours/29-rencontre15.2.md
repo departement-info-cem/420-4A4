@@ -1,6 +1,6 @@
 ---
 title: Rencontre 15.2
-description: Examen final sommatif
+description: Final sommatif
 ---
 
-# Examen final sommatif
+# Final sommatif

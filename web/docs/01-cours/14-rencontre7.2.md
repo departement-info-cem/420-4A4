@@ -1,6 +1,6 @@
 ---
 title: Rencontre 7.2
-description: Examen intra sommatif
+description: Examen Quiz - Intra formatif
 ---
 
-# Examen intra sommatif
+# Examen Quiz, Intra formatif

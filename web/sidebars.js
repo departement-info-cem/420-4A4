@@ -10,7 +10,7 @@ const sidebars = {
       customProps: { // Attention, il faut recompiler à chaque modification dans sidebar.js pour que les modifications s'appliquent.
         calendrier: {
           "Xavier Glorot": [
-            { "1010": "2026-01-27" }  // Date du cours pour le groupe 1010 du le Prof 1
+            { "1010": "2026-08-25" }  // Date du cours pour le groupe 1010 du le Prof 1
           ],
         },
         tooltip: "visible" // Valeurs possibles visible ou cache, valeur par défaut "visible"
@@ -23,7 +23,7 @@ const sidebars = {
       customProps: {
         calendrier: {
           "Xavier Glorot": [
-            { "1010": "2026-01-29" } // Date du cours pour le groupe 1010 du le Prof 1
+            { "1010": "2026-08-28" } // Date du cours pour le groupe 1010 du le Prof 1
           ],
         },
       }
@@ -35,7 +35,7 @@ const sidebars = {
       customProps: {
         calendrier: {
           "Xavier Glorot": [
-            { "1010": "2026-02-03" }
+            { "1010": "2026-09-01" }
           ],
         },
       }
@@ -47,7 +47,7 @@ const sidebars = {
       customProps: {
         calendrier: {
           "Xavier Glorot": [
-            { "1010": "2026-02-05" }
+            { "1010": "2026-09-04" }
           ],
         },
       }
@@ -59,7 +59,7 @@ const sidebars = {
       customProps: {
         calendrier: {
           "Xavier Glorot": [
-            { "1010": "2026-02-10" }
+            { "1010": "2026-09-08" }
           ],
         },
       }
@@ -71,7 +71,7 @@ const sidebars = {
       customProps: {
         calendrier: {
           "Xavier Glorot": [
-            { "1010": "2026-02-12" }
+            { "1010": "2026-09-11" }
           ],
         },
       },
@@ -83,7 +83,7 @@ const sidebars = {
       customProps: {
         calendrier: {
           "Xavier Glorot": [
-            { "1010": "2026-02-17" }
+            { "1010": "2026-09-15" }
           ],
         },
       },
@@ -96,7 +96,7 @@ const sidebars = {
       customProps: {
         calendrier: {
           "Xavier Glorot": [
-            { "1010": "2026-02-19" }
+            { "1010": "2026-09-18" }
           ],
         },
       },
@@ -108,7 +108,7 @@ const sidebars = {
       customProps: {
         calendrier: {
           "Xavier Glorot": [
-            { "1010": "2026-02-24" }
+            { "1010": "2026-09-22" }
           ],
         },
       },
@@ -120,7 +120,7 @@ const sidebars = {
       customProps: {
         calendrier: {
           "Xavier Glorot": [
-            { "1010": "2026-02-26" }
+            { "1010": "2026-09-25" }
           ],
         },
       }
@@ -132,7 +132,7 @@ const sidebars = {
       customProps: {
         calendrier: {
           "Xavier Glorot": [
-            { "1010": "2026-03-03" }
+            { "1010": "2026-09-29" }
           ],
         },
       }
@@ -144,51 +144,54 @@ const sidebars = {
       customProps: {
         calendrier: {
           "Xavier Glorot": [
-            { "1010": "2026-03-05" }
+            { "1010": "2026-10-02" }
           ],
         },
         avancementLabel: "TP1",
         avancement: 0.5
       },
+      "className": "remise-tp1",
     },
     {
       type: "doc",
-      label: "7.1 - Examen intra formatif",
+      label: "7.1 - TP 1",
       id: "cours/rencontre7.1",
       customProps: {
         calendrier: {
           "Xavier Glorot": [
-            { "1010": "2026-03-10" }
-          ],
-        },
-      },
-    },
-    {
-      type: "doc",
-      label: "7.2 - Examen intra sommatif",
-      id: "cours/rencontre7.2",
-      customProps: {
-        calendrier: {
-          "Xavier Glorot": [
-            { "1010": "2026-03-12" }
-          ],
-        }
-      },
-      "className": "examen"
-    },
-    {
-      type: "doc",
-      label: "8.1 - TP 1",
-      id: "cours/rencontre8.1",
-      customProps: {
-        calendrier: {
-          "Xavier Glorot": [
-            { "1010": "2026-03-05" }
+            { "1010": "2026-10-09" }
           ],
         },
         avancementLabel: "TP1",
         avancement: 1.0
       },
+      "className": "remise-tp1",
+    },
+    {
+      type: "doc",
+      label: "7.2 - Examen Quiz - Intra formatif",
+      id: "cours/rencontre7.2",
+      customProps: {
+        calendrier: {
+          "Xavier Glorot": [
+            { "1010": "2026-10-20" }
+          ],
+        },
+      },
+      "className": "examen"
+    },
+    {
+      type: "doc",
+      label: "8.1 - Intra sommatif",
+      id: "cours/rencontre8.1",
+      customProps: {
+        calendrier: {
+          "Xavier Glorot": [
+            { "1010": "2026-10-23" }
+          ],
+        }
+      },
+      "className": "examen"
     },
     {
       type: "doc",
@@ -197,11 +200,10 @@ const sidebars = {
       customProps: {
         calendrier: {
           "Xavier Glorot": [
-            { "1010": "2026-03-26" }
+            { "1010": "2026-10-27" }
           ],
         },
       },
-      "className": "remise-tp1"
     },
     {
       type: "doc",
@@ -210,7 +212,7 @@ const sidebars = {
       customProps: {
         calendrier: {
           "Xavier Glorot": [
-            { "1010": "2026-04-02" }
+            { "1010": "2026-10-30" }
           ],
         },
       }
@@ -222,12 +224,13 @@ const sidebars = {
       customProps: {
         calendrier: {
           "Xavier Glorot": [
-            { "1010": "2026-04-07" }
+            { "1010": "2026-11-03" }
           ],
         },
         avancementLabel: "TP2",
         avancement: 0.33
-      }
+      },
+      "className": "remise-tp2",
     },
     {
       type: "doc",
@@ -236,12 +239,13 @@ const sidebars = {
       customProps: {
         calendrier: {
           "Xavier Glorot": [
-            { "1010": "2026-04-14" }
+            { "1010": "2026-11-06" }
           ],
         },
         avancementLabel: "TP2",
         avancement: 0.66
       },
+      "className": "remise-tp2",
     },
     {
       type: "doc",
@@ -250,58 +254,58 @@ const sidebars = {
       customProps: {
         calendrier: {
           "Xavier Glorot": [
-            { "1010": "2026-04-16" }
+            { "1010": "2026-11-10" }
           ],
         },
         avancementLabel: "TP2",
         avancement: 1.0
-      }
-    },
-    {
-      type: "doc",
-      label: "11.1 - Données textuelles ou Prédictions denses",
-      id: "cours/rencontre11.1",
-      customProps: {
-        calendrier: {
-          "Xavier Glorot": [
-            { "1010": "2026-04-21" }
-          ],
-        },
       },
       "className": "remise-tp2",
     },
     {
       type: "doc",
-      label: "11.2 - Données textuelles ou Prédictions denses",
+      label: "11.1 - Données textuelles",
+      id: "cours/rencontre11.1",
+      customProps: {
+        calendrier: {
+          "Xavier Glorot": [
+            { "1010": "2026-11-13" }
+          ],
+        },
+      },
+    },
+    {
+      type: "doc",
+      label: "11.2 - Données textuelles",
       id: "cours/rencontre11.2",
       customProps: {
         calendrier: {
           "Xavier Glorot": [
-            { "1010": "2026-04-23" }
+            { "1010": "2026-11-17" }
           ],
         },
       }
     },
     {
       type: "doc",
-      label: "12.1 - Transformers ou Diffusion",
+      label: "12.1 - Transformers",
       id: "cours/rencontre12.1",
       customProps: {
         calendrier: {
           "Xavier Glorot": [
-            { "1010": "2026-04-28" }
+            { "1010": "2026-11-20" }
           ],
         },
       }
     },
     {
       type: "doc",
-      label: "12.2 - Transformers ou Diffusion",
+      label: "12.2 - Transformers",
       id: "cours/rencontre12.2",
       customProps: {
         calendrier: {
           "Xavier Glorot": [
-            { "1010": "2026-04-30" }
+            { "1010": "2026-11-24" }
           ],
         },
       }
@@ -313,12 +317,13 @@ const sidebars = {
       customProps: {
         calendrier: {
           "Xavier Glorot": [
-            { "1010": "2026-05-05" }
+            { "1010": "2026-11-27" }
           ],
         },
         avancementLabel: "TP3",
         avancement: 0.25
-      }
+      },
+      "className": "remise-tp3",
     },
     {
       type: "doc",
@@ -327,26 +332,28 @@ const sidebars = {
       customProps: {
         calendrier: {
           "Xavier Glorot": [
-            { "1010": "2026-05-07" }
+            { "1010": "2026-12-01" }
           ],
         },
         avancementLabel: "TP3",
         avancement: 0.50
-      }
+      },
+      "className": "remise-tp3",
     },
     {
       type: "doc",
-      label: "14.1 - Enjeux sociétaux / TP 3",
+      label: "14.1 - Enjeux sociétaux - TP 3",
       id: "cours/rencontre14.1",
       customProps: {
         calendrier: {
           "Xavier Glorot": [
-            { "1010": "2026-05-12" }
+            { "1010": "2026-12-04" }
           ],
         },
         avancementLabel: "TP3",
         avancement: 0.75
-      }
+      },
+      "className": "remise-tp2",
     },
     {
       type: "doc",
@@ -355,34 +362,35 @@ const sidebars = {
       customProps: {
         calendrier: {
           "Xavier Glorot": [
-            { "1010": "2026-05-14" }
+            { "1010": "2026-12-08" }
           ],
         },
         avancementLabel: "TP3",
         avancement: 1
-      }
+      },
+      "className": "remise-tp3",
     },
     {
       type: "doc",
-      label: "15.1 - Examen final formatif",
+      label: "15.1 - Quiz sommatif - Final formatif",
       id: "cours/rencontre15.1",
       customProps: {
         calendrier: {
           "Xavier Glorot": [
-            { "1010": "2026-05-21" }
+            { "1010": "2026-12-11" }
           ],
         }
       },
-      "className": "remise-tp3"
+      "className": "examen"
     },
     {
       type: "doc",
-      label: "15.2 - Examen final sommatif",
+      label: "15.2 - Final sommatif",
       id: "cours/rencontre15.2",
       customProps: {
         calendrier: {
           "Xavier Glorot": [
-            { "1010": "2026-05-26" }
+            { "1010": "2026-12-22" }
           ],
         }
       },

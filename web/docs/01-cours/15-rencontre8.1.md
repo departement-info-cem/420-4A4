@@ -1,6 +1,6 @@
 ---
 title: Rencontre 8.1
-description: TP 1
+description: Intra sommatif
 ---
 
-# TP 1
+# Intra sommatif

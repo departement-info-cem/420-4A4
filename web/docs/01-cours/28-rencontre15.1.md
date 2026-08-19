@@ -1,6 +1,6 @@
 ---
 title: Rencontre 15.1
-description: Examen final formatif
+description: Examen Quiz - Final formatif
 ---
 
-# Examen final formatif
+# Examen Quiz, Final formatif
