@@ -66,7 +66,7 @@ const sidebars = {
     },
     {
       type: "doc",
-      label: "3.2 - Programmation orientée objet",
+      label: "3.2 - Programmation orientée objet - Les classes",
       id: "cours/rencontre3.2",
       customProps: {
         calendrier: {
