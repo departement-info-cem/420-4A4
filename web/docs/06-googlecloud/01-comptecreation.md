@@ -36,7 +36,7 @@ Avant tout, il est important de vous assurer que vous êtes déconnecté de votr
 ## 4. Augmenter vos quotas pour les GPUs 🧇
 
 1. Cliquez de nouveau sur le rectangle à côté du logo Google Cloud puis sélectionnez votre nouveau projet.
-2. Cliquez sur les 3 lignes horizontales à gauche du logo Google Cloud, placez le pointeur sur **Vertex AI**, cliquez sur **Colab Enterprise**.
+2. Cliquez sur les 3 lignes horizontales à gauche du logo Google Cloud, placez le pointeur sur **Agent Plateform**, cliquez sur **Notebooks**.
 3. Une fenêtre va apparaître pour activer des API. Cliquez sur **Activer** et attendez (cela peut prendre quelques minutes).
 4. Cliquez sur les 3 lignes horizontales à gauche du logo Google Cloud, mettez le pointeur sur **IAM et administration**, attendez, puis cliquez sur **Quotas et limites du système**.
 5. Au-dessus de la table des quotas, il y a un champ *"Saisissez le nom ou la valeur de la propriété"*. Entrez-y : `GPUs (all regions)`.
@@ -46,7 +46,7 @@ Avant tout, il est important de vous assurer que vous êtes déconnecté de votr
 ---
 
 ## 5. Créer un modèle d'exécution GPU ⚙️
-1. Cliquez sur les 3 lignes horizontales à gauche du logo Google Cloud, placez le pointeur sur **Vertex AI**, cliquez sur **Colab Enterprise**.
+1. Cliquez sur les 3 lignes horizontales à gauche du logo Google Cloud, placez le pointeur sur **Agent Plateform**, cliquez sur **Notebooks**.
 2. Cliquez sur **Modèles d'exécution**.
 3. En haut, au milieu, cliquez sur **+ Nouveau modèle**.
 4. Donnez-lui un nom (ex. : "GPU"), sélectionnez la région désirée, par exemple: `us-west1 (Oregon)` (la liste complete est [ici](regionscloud)), puis cliquez sur **Continuer**.

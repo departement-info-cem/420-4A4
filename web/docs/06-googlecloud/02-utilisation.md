@@ -18,7 +18,7 @@ Pour accéder à *Colab Enterprise* :
 1. Allez sur [Google Cloud](https://cloud.google.com/).
 2. Cliquez sur **Console** en haut à droite.
 3. Cliquez sur le rectangle à côté du logo Google Cloud et sélectionnez votre projet.
-4. Cliquez sur les 3 lignes horizontales à gauche du logo Google Cloud, placez le pointeur sur **Vertex AI**, cliquez sur **Colab Enterprise**.
+4. Cliquez sur les 3 lignes horizontales à gauche du logo Google Cloud, placez le pointeur sur **Agent Plateform**, cliquez sur **Notebooks**.
 
 ---
 
